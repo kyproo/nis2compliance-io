@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NIS2 vs ISO 27001: What's the Difference and Do You Need Both? | BALTUM Bureau</title>
+  <meta name="description" content="ISO 27001 certified? Learn what NIS2 adds on top — management liability, incident reporting timelines, sector requirements — and what gaps remain even with ISO 27001." />
+  <meta name="keywords" content="NIS2 ISO 27001 difference, NIS2 vs ISO 27001, ISO 27001 NIS2 gap, NIS2 compliance, BALTUM Bureau" />
+  <meta name="author" content="BALTUM Bureau" />
+  <meta property="og:title" content="NIS2 vs ISO 27001: What's the Difference?" />
+  <meta property="og:description" content="ISO 27001 gives you a strong foundation — but NIS2 adds specific obligations you can't ignore. Learn about the key differences." />
+  <meta property="og:url" content="https://nis2compliance.io/blog/nis2-vs-iso27001.html" />
+  <meta property="og:type" content="article" />
+  <link rel="canonical" href="https://nis2compliance.io/blog/nis2-vs-iso27001.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .article-hero {
+      background: linear-gradient(135deg, #0f1f3d 0%, #1a3560 100%);
+      padding: 100px 0 60px;
+      color: #fff;
+    }
+    .article-hero .container { max-width: 800px; }
+    .article-breadcrumb {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 0.85rem; color: rgba(255,255,255,0.6); margin-bottom: 1.5rem;
+    }
+    .article-breadcrumb a { color: rgba(255,255,255,0.6); text-decoration: none; }
+    .article-breadcrumb a:hover { color: #fff; }
+    .article-breadcrumb span { color: rgba(255,255,255,0.4); }
+    .article-tag {
+      display: inline-block; background: rgba(29,111,232,0.3);
+      color: #7fb3ff; padding: 4px 14px; border-radius: 20px;
+      font-size: 0.8rem; font-weight: 600; margin-bottom: 1rem;
+    }
+    .article-hero h1 {
+      font-size: 2.2rem; font-weight: 800; line-height: 1.25;
+      margin-bottom: 1.25rem;
+    }
+    .article-meta {
+      display: flex; align-items: center; gap: 1.5rem;
+      font-size: 0.85rem; color: rgba(255,255,255,0.65);
+    }
+    .article-meta-item { display: flex; align-items: center; gap: 6px; }
+
+    .article-body-section { padding: 70px 0 80px; background: #f8fafc; }
+    .article-container { max-width: 800px; margin: 0 auto; padding: 0 1.5rem; }
+    .article-content {
+      background: #fff; border-radius: 16px;
+      box-shadow: 0 2px 24px rgba(29,111,232,0.07);
+      padding: 3rem 3.5rem;
+    }
+    @media (max-width: 640px) {
+      .article-content { padding: 2rem 1.5rem; }
+      .article-hero h1 { font-size: 1.6rem; }
+    }
+    .article-content p {
+      font-size: 1.05rem; line-height: 1.8; color: #333;
+      margin-bottom: 1.4rem;
+    }
+    .article-content h2 {
+      font-size: 1.45rem; font-weight: 700; color: #0f1f3d;
+      margin: 2.5rem 0 1rem; padding-left: 1rem;
+      border-left: 4px solid #1D6FE8;
+    }
+    .article-content h3 {
+      font-size: 1.1rem; font-weight: 600; color: #1a3560;
+      margin: 1.5rem 0 0.6rem;
+    }
+    .article-content ul {
+      margin: 0.75rem 0 1.4rem 1.5rem;
+      line-height: 1.8; color: #333; font-size: 1.02rem;
+    }
+    .article-content ul li { margin-bottom: 0.4rem; }
+    .info-box {
+      background: #e8f0fe; border-left: 4px solid #1D6FE8;
+      border-radius: 0 8px 8px 0; padding: 1.25rem 1.5rem;
+      margin: 1.75rem 0; font-size: 0.97rem; color: #1a3560;
+    }
+    .info-box strong { display: block; margin-bottom: 0.4rem; font-size: 1rem; }
+    .overlap-visual {
+      background: linear-gradient(135deg, #e8f0fe 0%, #f0f7ff 100%);
+      border-radius: 12px; padding: 2rem; margin: 2rem 0; text-align: center;
+    }
+    .overlap-visual .pct { font-size: 3rem; font-weight: 800; color: #1D6FE8; }
+    .overlap-visual p { margin: 0.5rem 0 0; color: #444; font-size: 0.97rem; }
+    .article-cta {
+      background: linear-gradient(135deg, #0f1f3d 0%, #1a3560 100%);
+      border-radius: 12px; padding: 2.5rem; margin-top: 3rem; text-align: center; color: #fff;
+    }
+    .article-cta h3 { font-size: 1.4rem; font-weight: 700; margin-bottom: 0.75rem; }
+    .article-cta p { color: rgba(255,255,255,0.8); margin-bottom: 1.5rem; font-size: 0.97rem; }
+    .article-nav { display: flex; justify-content: space-between; margin-top: 2.5rem; gap: 1rem; }
+    .article-nav a {
+      color: #1D6FE8; text-decoration: none; font-weight: 600;
+      font-size: 0.9rem; display: flex; align-items: center; gap: 6px;
+    }
+    .article-nav a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<!-- HEADER / NAV -->
+<header class="header" id="top">
+  <div class="container nav-container">
+    <a href="../index.html" class="logo">
+      <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 3L5 10V20C5 28.8 11.6 37.1 20 39C28.4 37.1 35 28.8 35 20V10L20 3Z" fill="#1D6FE8" opacity="0.2" stroke="#1D6FE8" stroke-width="2"/>
+        <path d="M20 8L9 13.5V20C9 26.6 13.9 32.7 20 34.5C26.1 32.7 31 26.6 31 20V13.5L20 8Z" fill="#1D6FE8" opacity="0.3"/>
+        <path d="M14 20L18 24L27 15" stroke="#1D6FE8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div class="logo-text">
+        <span class="logo-name">NIS2 Compliance</span>
+        <span class="logo-tagline">by BALTUM Bureau</span>
+      </div>
+    </a>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="navMenu">
+      <a href="../index.html#about" class="nav-link">About NIS2</a>
+      <a href="../index.html#services" class="nav-link">Our Services</a>
+      <a href="../index.html#who-needs" class="nav-link">Who Needs It</a>
+      <a href="/blog/" class="nav-link">Blog</a>
+      <a href="../index.html#contact" class="btn btn-primary btn-sm">Get Free Assessment</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ARTICLE HERO -->
+<section class="article-hero">
+  <div class="container">
+    <div class="article-breadcrumb">
+      <a href="../index.html">Home</a>
+      <span>›</span>
+      <a href="index.html">Blog</a>
+      <span>›</span>
+      <span>NIS2 vs ISO 27001</span>
+    </div>
+    <div class="article-tag">Standards</div>
+    <h1>NIS2 vs ISO 27001: What's the Difference and Do You Need Both?</h1>
+    <div class="article-meta">
+      <div class="article-meta-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/><path d="M16 2V6M8 2V6M3 10H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        May 2026
+      </div>
+      <div class="article-meta-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 20C4 17.79 7.58 16 12 16C16.42 16 20 17.79 20 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        BALTUM Bureau
+      </div>
+      <div class="article-meta-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6V12L15 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        6 min read
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ARTICLE BODY -->
+<section class="article-body-section">
+  <div class="article-container">
+    <div class="article-content">
+
+      <p>If your organization holds ISO 27001 certification, you've already done serious work on information security. You have a documented management system, a risk register, defined controls, and regular audits. So when NIS2 came into force across EU member states, a natural question arose: <strong>do we really need to do more?</strong></p>
+
+      <p>The honest answer is: yes — but less than you might think. ISO 27001 and NIS2 share a great deal of common ground, but NIS2 introduces regulatory obligations that go beyond any voluntary framework. Understanding exactly where the gaps are will help you focus your effort and resources efficiently.</p>
+
+      <h2>What ISO 27001 Covers</h2>
+
+      <p>ISO 27001 is the international standard for Information Security Management Systems (ISMS). At its core, it requires organizations to:</p>
+      <ul>
+        <li>Define the scope of the ISMS and its context</li>
+        <li>Conduct systematic risk assessments and implement risk treatment plans</li>
+        <li>Apply a set of 93 controls from Annex A (covering security policies, access control, cryptography, physical security, incident management, supplier relationships, and more)</li>
+        <li>Maintain documented evidence and undergo internal audits</li>
+        <li>Conduct management reviews and demonstrate continual improvement</li>
+      </ul>
+
+      <p>When implemented properly, ISO 27001 creates a mature, risk-driven security program. This is exactly the kind of foundation that NIS2 expects to see in place. In fact, the European Union Agency for Cybersecurity (ENISA) has acknowledged ISO 27001 as a useful baseline for NIS2 compliance.</p>
+
+      <h2>What NIS2 Adds on Top</h2>
+
+      <p>NIS2 (Directive EU 2022/2555) is not a voluntary standard — it is binding EU law. It introduces obligations that no certification framework, however rigorous, can substitute for. The key additions include:</p>
+
+      <h3>Management Liability</h3>
+      <p>NIS2 makes senior management personally accountable for the organization's cybersecurity posture. Management bodies can face personal liability for serious negligence, including temporary bans from management roles. ISO 27001 encourages "top management commitment," but it imposes no personal legal consequences.</p>
+
+      <h3>Mandatory Incident Reporting Timelines</h3>
+      <p>NIS2 requires covered entities to report significant incidents to their national competent authority (NCA) within <strong>24 hours</strong> (initial early warning) and <strong>72 hours</strong> (full incident notification). A final report is due within one month. ISO 27001's incident management controls are process-oriented — they don't mandate specific reporting timelines to regulators.</p>
+
+      <h3>Sector-Specific Requirements</h3>
+      <p>NIS2 organizes obligations by sector (energy, transport, health, digital infrastructure, etc.) and distinguishes between Essential and Important Entities with different fine levels and supervision intensity. ISO 27001 is sector-agnostic.</p>
+
+      <h3>Supply Chain Security</h3>
+      <p>While ISO 27001 Annex A includes supplier security controls, NIS2 Article 21 requires a more comprehensive approach to supply chain risk — including assessing the security practices of direct suppliers <em>and</em> their sub-suppliers, with documented evidence.</p>
+
+      <div class="overlap-visual">
+        <div class="pct">75–80%</div>
+        <p>of NIS2 technical and organizational controls are already covered by a well-implemented ISO 27001 ISMS</p>
+      </div>
+
+      <h2>The Overlap: Where ISO 27001 Already Helps</h2>
+
+      <p>The good news for ISO 27001 certified organizations is substantial. Research and practical experience suggest that <strong>75–80% of the controls required under NIS2 Article 21</strong> are already addressed by a well-implemented ISMS. This includes:</p>
+      <ul>
+        <li>Risk management and risk assessment processes</li>
+        <li>Access control and identity management</li>
+        <li>Cryptography and encryption policies</li>
+        <li>Incident response and handling procedures</li>
+        <li>Asset management and classification</li>
+        <li>Vulnerability management and patch management</li>
+        <li>Physical and environmental security</li>
+        <li>HR security and awareness training</li>
+        <li>Business continuity and disaster recovery planning</li>
+        <li>Supplier and third-party risk management (basic)</li>
+      </ul>
+
+      <div class="info-box">
+        <strong>Bottom line on overlap:</strong>
+        If you are ISO 27001 certified and your ISMS is genuinely mature (not just paper-based), you are in a strong position. A targeted NIS2 gap assessment will tell you precisely what remains — and it's usually much less work than starting from scratch.
+      </div>
+
+      <h2>What You Still Need to Do — Even with ISO 27001</h2>
+
+      <p>ISO 27001 certification does not exempt you from NIS2 compliance. Beyond filling any technical control gaps, organizations in scope must address:</p>
+
+      <h3>Formal NIS2 Registration</h3>
+      <p>Depending on the EU member state(s) where you operate, you may be required to formally register with your National Competent Authority (NCA). This registration is a legal obligation separate from any certification.</p>
+
+      <h3>Incident Reporting Procedures for Regulators</h3>
+      <p>Your existing ISO 27001 incident response procedures need to be updated to include the NIS2-specific reporting chain: who notifies the NCA, what information is included, and within which timeframes. This is a procedural gap that few ISO 27001 implementations address.</p>
+
+      <h3>Management Awareness and Training</h3>
+      <p>NIS2 explicitly requires that management bodies approve and take responsibility for the organization's cybersecurity measures. This means senior leadership needs structured training on NIS2 obligations — not just awareness, but documented understanding and sign-off.</p>
+
+      <h3>Documenting Compliance Evidence</h3>
+      <p>Unlike ISO 27001, which is audited by a certification body, NIS2 compliance is supervised by national regulators who may request evidence at any time. Your documentation and compliance posture need to be regulation-ready, not just audit-ready.</p>
+
+      <h2>Conclusion: A Strong Foundation — With Specific Gaps</h2>
+
+      <p>ISO 27001 is genuinely valuable for NIS2 compliance — it's not "nice to have," it's a significant accelerator. Organizations with a mature ISMS will find NIS2 compliance achievable with focused, targeted effort rather than a complete overhaul.</p>
+
+      <p>However, the key word is "targeted." The gaps that do exist — management liability, 24/72h incident reporting, NCA registration, and sector-specific requirements — are not trivial. They require specific procedural changes and management engagement.</p>
+
+      <p>The most efficient path forward is a structured NIS2 gap assessment that maps your current ISO 27001 controls against NIS2 Article 21 requirements and identifies exactly what needs to be added, updated, or formalized.</p>
+
+      <div class="article-cta">
+        <h3>Know Your Exact Gap</h3>
+        <p>BALTUM Bureau offers structured NIS2 gap assessments for ISO 27001 certified organizations. We map your existing controls to NIS2 requirements and give you a clear, prioritized action plan — no fluff, just results.</p>
+        <a href="../index.html#contact" class="btn btn-primary btn-lg">Contact BALTUM Bureau for a Gap Assessment</a>
+      </div>
+
+      <div class="article-nav">
+        <a href="index.html">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M19 12H5M11 6L5 12L11 18" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Back to Blog
+        </a>
+        <a href="nis2-implementation-steps.html">
+          5 Steps to NIS2 Compliance
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12H19M13 6L19 12L13 18" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="../index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 40 40" fill="none"><path d="M20 3L5 10V20C5 28.8 11.6 37.1 20 39C28.4 37.1 35 28.8 35 20V10L20 3Z" fill="#1D6FE8" opacity="0.2" stroke="#1D6FE8" stroke-width="2"/><path d="M14 20L18 24L27 15" stroke="#1D6FE8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="logo-text">
+          <span class="logo-name">NIS2 Compliance</span>
+          <span class="logo-tagline">by BALTUM Bureau</span>
+        </div>
+      </a>
+      <p class="footer-desc">Professional NIS2 compliance consulting for EU organizations. Audits, consulting, and training by certified experts.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <div class="footer-col-title">Services</div>
+        <a href="../index.html#services">NIS2 Audit</a>
+        <a href="../index.html#services">NIS2 Consulting</a>
+        <a href="../index.html#services">NIS2 Training</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Resources</div>
+        <a href="../index.html#about">About NIS2</a>
+        <a href="../index.html#requirements">NIS2 Requirements</a>
+        <a href="index.html">Blog</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">BALTUM Group</div>
+        <a href="https://baltum.org" target="_blank" rel="noopener">baltum.org</a>
+        <a href="../index.html#contact">Contact Us</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <span>© 2026 BALTUM Bureau | nis2compliance.io</span>
+      <span class="footer-updated">Last updated: May 2026</span>
+      <div class="footer-bottom-links">
+        <a href="https://baltum.org" target="_blank" rel="noopener">baltum.org</a>
+        <a href="../index.html#privacy">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('mobileToggle');
+  const navMenu = document.getElementById('navMenu');
+  toggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    toggle.classList.toggle('active');
+  });
+  document.querySelectorAll('.nav-link, .nav .btn').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+      toggle.classList.remove('active');
+    });
+  });
+  window.addEventListener('scroll', () => {
+    const header = document.querySelector('.header');
+    if (window.scrollY > 20) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+</script>
+
+</body>
+</html>

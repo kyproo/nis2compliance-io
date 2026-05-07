@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>5 Steps to NIS2 Compliance: A Practical Guide | BALTUM Bureau</title>
+  <meta name="description" content="A practical 5-step guide to NIS2 compliance for EU organizations: from determining if NIS2 applies, through gap analysis and control implementation, to national registration and ongoing compliance." />
+  <meta name="keywords" content="NIS2 implementation steps, NIS2 compliance guide, NIS2 gap analysis, NIS2 registration, BALTUM Bureau" />
+  <meta name="author" content="BALTUM Bureau" />
+  <meta property="og:title" content="5 Steps to NIS2 Compliance: A Practical Guide for EU Organizations" />
+  <meta property="og:description" content="NIS2 applies to 160,000+ EU organizations. Here's a practical 5-step roadmap to achieve compliance efficiently." />
+  <meta property="og:url" content="https://nis2compliance.io/blog/nis2-implementation-steps.html" />
+  <meta property="og:type" content="article" />
+  <link rel="canonical" href="https://nis2compliance.io/blog/nis2-implementation-steps.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .article-hero {
+      background: linear-gradient(135deg, #0f1f3d 0%, #1a3560 100%);
+      padding: 100px 0 60px;
+      color: #fff;
+    }
+    .article-hero .container { max-width: 800px; }
+    .article-breadcrumb {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 0.85rem; color: rgba(255,255,255,0.6); margin-bottom: 1.5rem;
+    }
+    .article-breadcrumb a { color: rgba(255,255,255,0.6); text-decoration: none; }
+    .article-breadcrumb a:hover { color: #fff; }
+    .article-breadcrumb span { color: rgba(255,255,255,0.4); }
+    .article-tag {
+      display: inline-block; background: rgba(29,111,232,0.3);
+      color: #7fb3ff; padding: 4px 14px; border-radius: 20px;
+      font-size: 0.8rem; font-weight: 600; margin-bottom: 1rem;
+    }
+    .article-hero h1 {
+      font-size: 2.2rem; font-weight: 800; line-height: 1.25;
+      margin-bottom: 1.25rem;
+    }
+    .article-meta {
+      display: flex; align-items: center; gap: 1.5rem;
+      font-size: 0.85rem; color: rgba(255,255,255,0.65);
+    }
+    .article-meta-item { display: flex; align-items: center; gap: 6px; }
+
+    .article-body-section { padding: 70px 0 80px; background: #f8fafc; }
+    .article-container { max-width: 800px; margin: 0 auto; padding: 0 1.5rem; }
+    .article-content {
+      background: #fff; border-radius: 16px;
+      box-shadow: 0 2px 24px rgba(29,111,232,0.07);
+      padding: 3rem 3.5rem;
+    }
+    @media (max-width: 640px) {
+      .article-content { padding: 2rem 1.5rem; }
+      .article-hero h1 { font-size: 1.6rem; }
+    }
+    .article-content p {
+      font-size: 1.05rem; line-height: 1.8; color: #333;
+      margin-bottom: 1.4rem;
+    }
+    .article-content h2 {
+      font-size: 1.45rem; font-weight: 700; color: #0f1f3d;
+      margin: 2.5rem 0 1rem;
+    }
+    .article-content ul {
+      margin: 0.75rem 0 1.4rem 1.5rem;
+      line-height: 1.8; color: #333; font-size: 1.02rem;
+    }
+    .article-content ul li { margin-bottom: 0.4rem; }
+    .step-block {
+      border-radius: 12px; overflow: hidden;
+      margin: 2rem 0; box-shadow: 0 2px 12px rgba(29,111,232,0.08);
+    }
+    .step-header {
+      background: linear-gradient(90deg, #1D6FE8 0%, #2d82ff 100%);
+      padding: 1.1rem 1.75rem;
+      display: flex; align-items: center; gap: 1rem; color: #fff;
+    }
+    .step-number {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: rgba(255,255,255,0.2);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem; font-weight: 800; flex-shrink: 0;
+    }
+    .step-header h2 {
+      font-size: 1.1rem; font-weight: 700; color: #fff;
+      margin: 0 !important; padding: 0 !important; border: none !important;
+    }
+    .step-body {
+      background: #fff; padding: 1.5rem 1.75rem;
+    }
+    .step-body p { margin-bottom: 0.8rem; }
+    .step-body ul { margin-bottom: 0.5rem; }
+    .info-box {
+      background: #e8f0fe; border-left: 4px solid #1D6FE8;
+      border-radius: 0 8px 8px 0; padding: 1.25rem 1.5rem;
+      margin: 1.75rem 0; font-size: 0.97rem; color: #1a3560;
+    }
+    .info-box strong { display: block; margin-bottom: 0.4rem; font-size: 1rem; }
+    .article-cta {
+      background: linear-gradient(135deg, #0f1f3d 0%, #1a3560 100%);
+      border-radius: 12px; padding: 2.5rem; margin-top: 3rem; text-align: center; color: #fff;
+    }
+    .article-cta h3 { font-size: 1.4rem; font-weight: 700; margin-bottom: 0.75rem; }
+    .article-cta p { color: rgba(255,255,255,0.8); margin-bottom: 1.5rem; font-size: 0.97rem; }
+    .article-nav { display: flex; justify-content: space-between; margin-top: 2.5rem; gap: 1rem; }
+    .article-nav a {
+      color: #1D6FE8; text-decoration: none; font-weight: 600;
+      font-size: 0.9rem; display: flex; align-items: center; gap: 6px;
+    }
+    .article-nav a:hover { text-decoration: underline; }
+    .threshold-table {
+      width: 100%; border-collapse: collapse; margin: 1.25rem 0;
+      font-size: 0.94rem;
+    }
+    .threshold-table th {
+      background: #0f1f3d; color: #fff; padding: 0.75rem 1rem;
+      text-align: left; font-weight: 600;
+    }
+    .threshold-table td {
+      padding: 0.7rem 1rem; border-bottom: 1px solid #e8edf5; color: #333;
+    }
+    .threshold-table tr:last-child td { border-bottom: none; }
+    .threshold-table tr:nth-child(even) td { background: #f8fafc; }
+  </style>
+</head>
+<body>
+
+<!-- HEADER / NAV -->
+<header class="header" id="top">
+  <div class="container nav-container">
+    <a href="../index.html" class="logo">
+      <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 3L5 10V20C5 28.8 11.6 37.1 20 39C28.4 37.1 35 28.8 35 20V10L20 3Z" fill="#1D6FE8" opacity="0.2" stroke="#1D6FE8" stroke-width="2"/>
+        <path d="M20 8L9 13.5V20C9 26.6 13.9 32.7 20 34.5C26.1 32.7 31 26.6 31 20V13.5L20 8Z" fill="#1D6FE8" opacity="0.3"/>
+        <path d="M14 20L18 24L27 15" stroke="#1D6FE8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div class="logo-text">
+        <span class="logo-name">NIS2 Compliance</span>
+        <span class="logo-tagline">by BALTUM Bureau</span>
+      </div>
+    </a>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="navMenu">
+      <a href="../index.html#about" class="nav-link">About NIS2</a>
+      <a href="../index.html#services" class="nav-link">Our Services</a>
+      <a href="../index.html#who-needs" class="nav-link">Who Needs It</a>
+      <a href="/blog/" class="nav-link">Blog</a>
+      <a href="../index.html#contact" class="btn btn-primary btn-sm">Get Free Assessment</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ARTICLE HERO -->
+<section class="article-hero">
+  <div class="container">
+    <div class="article-breadcrumb">
+      <a href="../index.html">Home</a>
+      <span>›</span>
+      <a href="index.html">Blog</a>
+      <span>›</span>
+      <span>5 Steps to NIS2 Compliance</span>
+    </div>
+    <div class="article-tag">Implementation</div>
+    <h1>5 Steps to NIS2 Compliance: A Practical Guide for EU Organizations</h1>
+    <div class="article-meta">
+      <div class="article-meta-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/><path d="M16 2V6M8 2V6M3 10H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        May 2026
+      </div>
+      <div class="article-meta-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 20C4 17.79 7.58 16 12 16C16.42 16 20 17.79 20 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        BALTUM Bureau
+      </div>
+      <div class="article-meta-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6V12L15 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        7 min read
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ARTICLE BODY -->
+<section class="article-body-section">
+  <div class="article-container">
+    <div class="article-content">
+
+      <p>NIS2 (Directive EU 2022/2555) is now in force across EU member states — and it affects an estimated <strong>160,000+ organizations</strong> across critical and important sectors. Yet for many compliance and IT teams, the directive still feels abstract: a long list of requirements with no clear starting point.</p>
+
+      <p>This guide cuts through the complexity. Below are five practical steps that any EU organization can follow to move from uncertainty to compliance — regardless of where you're starting from.</p>
+
+      <div class="step-block">
+        <div class="step-header">
+          <div class="step-number">1</div>
+          <h2>Determine if NIS2 Applies to You</h2>
+        </div>
+        <div class="step-body">
+          <p>Before investing in compliance work, confirm whether your organization actually falls within NIS2's scope. The directive distinguishes between two categories of covered entities:</p>
+
+          <table class="threshold-table">
+            <tr>
+              <th>Category</th>
+              <th>Supervision Level</th>
+              <th>Max Fine</th>
+            </tr>
+            <tr>
+              <td><strong>Essential Entities</strong></td>
+              <td>Proactive (ex ante)</td>
+              <td>€10M or 2% global turnover</td>
+            </tr>
+            <tr>
+              <td><strong>Important Entities</strong></td>
+              <td>Reactive (ex post)</td>
+              <td>€7M or 1.4% global turnover</td>
+            </tr>
+          </table>
+
+          <p><strong>Size thresholds:</strong> NIS2 applies to organizations with <strong>50+ employees OR €10M+ annual turnover</strong> operating in covered sectors. Smaller organizations may still be included if they are the sole provider of a critical service or if a member state extends the scope.</p>
+
+          <p>Covered sectors include: energy, transport, banking, financial markets, health, drinking water, wastewater, digital infrastructure, ICT service management, public administration, space, postal services, waste management, chemicals, food production, manufacturing, digital providers, and research organizations.</p>
+
+          <p><strong>Action:</strong> Document your determination in writing — including which sector category applies and which member states' implementation you fall under.</p>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-header">
+          <div class="step-number">2</div>
+          <h2>Conduct a Gap Analysis Against Article 21</h2>
+        </div>
+        <div class="step-body">
+          <p>Once you've confirmed scope, compare your current security posture against the requirements in NIS2 Article 21. This is the core of the directive — it mandates "appropriate and proportionate technical, operational, and organizational measures to manage the risks posed to the security of network and information systems."</p>
+
+          <p>The Article 21 measures include:</p>
+          <ul>
+            <li>Risk analysis and information system security policies</li>
+            <li>Incident handling (detection, response, recovery)</li>
+            <li>Business continuity and disaster recovery</li>
+            <li>Supply chain security</li>
+            <li>Security in network and information systems acquisition and development</li>
+            <li>Policies and procedures to assess the effectiveness of measures</li>
+            <li>Cyber hygiene practices and cybersecurity training</li>
+            <li>Cryptography and encryption</li>
+            <li>Human resources security, access control, and asset management</li>
+            <li>Multi-factor authentication and secure communication systems</li>
+          </ul>
+
+          <p>For each area, document your current state, identify gaps, and assign a risk priority. If you hold ISO 27001, you can map your existing ISMS controls directly — expect to find that 75–80% of requirements are already addressed.</p>
+
+          <div class="info-box">
+            <strong>Tip:</strong> Use a structured gap assessment matrix that maps each NIS2 Article 21 requirement to existing controls, documentation, and evidence. This becomes your compliance baseline and can be shown to supervisory authorities on request.
+          </div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-header">
+          <div class="step-number">3</div>
+          <h2>Implement Missing Controls</h2>
+        </div>
+        <div class="step-body">
+          <p>Address the gaps identified in Step 2, prioritized by risk. Common areas where organizations need to invest include:</p>
+
+          <ul>
+            <li><strong>Incident response procedures with NIS2-specific reporting timelines</strong> — 24h early warning and 72h notification to your NCA must be operationalized, not just documented</li>
+            <li><strong>Multi-factor authentication (MFA)</strong> — implement across all privileged accounts, remote access, and critical systems</li>
+            <li><strong>Supply chain security program</strong> — assess and document security practices of key suppliers, including contractual security requirements</li>
+            <li><strong>Management training and awareness</strong> — NIS2 explicitly requires management bodies to receive training; document attendance and content</li>
+            <li><strong>Vulnerability disclosure and patch management</strong> — formal procedures for tracking and remediating vulnerabilities within defined timeframes</li>
+            <li><strong>Business continuity testing</strong> — plans must be tested, not just written; document exercise results</li>
+          </ul>
+
+          <p>Prioritize controls that have both high regulatory significance and high risk reduction value. Don't try to implement everything at once — a risk-based approach is both NIS2-compliant and practically sensible.</p>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-header">
+          <div class="step-number">4</div>
+          <h2>Register with Your National Competent Authority (NCA)</h2>
+        </div>
+        <div class="step-body">
+          <p>Most EU member states require covered entities to formally register with their National Competent Authority (NCA). This is a legal obligation separate from any technical compliance work — and it is often missed by organizations focused solely on implementing controls.</p>
+
+          <p>Registration requirements vary by member state, but typically include:</p>
+          <ul>
+            <li>Organization name, legal status, and sector classification</li>
+            <li>List of IP address ranges and domain names</li>
+            <li>Contact details for security incidents</li>
+            <li>Identification of management persons responsible for NIS2 compliance</li>
+          </ul>
+
+          <p>Check the requirements for each EU member state where your organization operates. Some member states have integrated NIS2 registration into existing sector-specific frameworks; others have created new online registration portals.</p>
+
+          <div class="info-box">
+            <strong>Important:</strong> Failure to register is itself an enforcement risk, independent of your technical compliance status. Complete registration early — it also signals good faith to supervisory authorities.
+          </div>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <div class="step-header">
+          <div class="step-number">5</div>
+          <h2>Maintain Compliance — Ongoing</h2>
+        </div>
+        <div class="step-body">
+          <p>NIS2 compliance is not a one-time project. Regulatory expectations require that covered entities continuously manage cybersecurity risks and keep their measures up to date. Key ongoing activities include:</p>
+
+          <ul>
+            <li><strong>Annual internal reviews</strong> — reassess your risk landscape, update your risk register, and verify that controls remain effective</li>
+            <li><strong>Incident reporting</strong> — maintain your 24h/72h reporting capability and conduct post-incident reviews after any significant event</li>
+            <li><strong>Management training</strong> — refresh management awareness annually; document participation</li>
+            <li><strong>Supplier reassessment</strong> — review key suppliers at least annually, particularly after security incidents in your supply chain</li>
+            <li><strong>Business continuity testing</strong> — conduct at least annual exercises; document and act on findings</li>
+            <li><strong>Vulnerability scanning and patching</strong> — maintain a regular cadence; document remediation timelines</li>
+          </ul>
+
+          <p>Build NIS2 compliance activities into your organization's regular operational calendar — not as a separate workstream, but as part of normal security management. Assign ownership, set review dates, and track completion.</p>
+        </div>
+      </div>
+
+      <p>NIS2 compliance is achievable. It requires systematic effort, management commitment, and the right expertise — but organizations that approach it step by step, with clear documentation and prioritization, will find it manageable. The key is to start, and to start with the right framework.</p>
+
+      <div class="article-cta">
+        <h3>Need Help Getting Started?</h3>
+        <p>BALTUM Bureau offers structured NIS2 gap analysis and implementation support for EU organizations. Whether you're starting from scratch or refining an existing program, our certified auditors will guide you through every step — efficiently and without unnecessary complexity.</p>
+        <a href="../index.html#contact" class="btn btn-primary btn-lg">Contact BALTUM Bureau for NIS2 Support</a>
+      </div>
+
+      <div class="article-nav">
+        <a href="nis2-vs-iso27001.html">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M19 12H5M11 6L5 12L11 18" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          NIS2 vs ISO 27001
+        </a>
+        <a href="index.html">
+          Back to Blog
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12H19M13 6L19 12L13 18" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="../index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 40 40" fill="none"><path d="M20 3L5 10V20C5 28.8 11.6 37.1 20 39C28.4 37.1 35 28.8 35 20V10L20 3Z" fill="#1D6FE8" opacity="0.2" stroke="#1D6FE8" stroke-width="2"/><path d="M14 20L18 24L27 15" stroke="#1D6FE8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="logo-text">
+          <span class="logo-name">NIS2 Compliance</span>
+          <span class="logo-tagline">by BALTUM Bureau</span>
+        </div>
+      </a>
+      <p class="footer-desc">Professional NIS2 compliance consulting for EU organizations. Audits, consulting, and training by certified experts.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <div class="footer-col-title">Services</div>
+        <a href="../index.html#services">NIS2 Audit</a>
+        <a href="../index.html#services">NIS2 Consulting</a>
+        <a href="../index.html#services">NIS2 Training</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Resources</div>
+        <a href="../index.html#about">About NIS2</a>
+        <a href="../index.html#requirements">NIS2 Requirements</a>
+        <a href="index.html">Blog</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">BALTUM Group</div>
+        <a href="https://baltum.org" target="_blank" rel="noopener">baltum.org</a>
+        <a href="../index.html#contact">Contact Us</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <span>© 2026 BALTUM Bureau | nis2compliance.io</span>
+      <span class="footer-updated">Last updated: May 2026</span>
+      <div class="footer-bottom-links">
+        <a href="https://baltum.org" target="_blank" rel="noopener">baltum.org</a>
+        <a href="../index.html#privacy">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('mobileToggle');
+  const navMenu = document.getElementById('navMenu');
+  toggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    toggle.classList.toggle('active');
+  });
+  document.querySelectorAll('.nav-link, .nav .btn').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+      toggle.classList.remove('active');
+    });
+  });
+  window.addEventListener('scroll', () => {
+    const header = document.querySelector('.header');
+    if (window.scrollY > 20) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+</script>
+
+</body>
+</html>
