@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Essential vs Important Entities Under NIS2: Which Category Are You? | BALTUM Bureau</title>
+  <meta name="description" content="NIS2 divides organizations into Essential and Important Entities with different oversight levels and fines. Find out which category applies to your organization and what it means in practice." />
+  <meta name="keywords" content="NIS2 essential entities, NIS2 important entities, NIS2 categories, NIS2 compliance, BALTUM Bureau" />
+  <meta name="author" content="BALTUM Bureau" />
+  <meta property="og:title" content="Essential vs Important Entities Under NIS2: Which Category Are You?" />
+  <meta property="og:description" content="NIS2 divides organizations into two categories with different oversight levels. Learn which one applies to you and what the differences mean in practice." />
+  <meta property="og:url" content="https://nis2compliance.io/blog/nis2-essential-vs-important.html" />
+  <meta property="og:type" content="article" />
+  <link rel="canonical" href="https://nis2compliance.io/blog/nis2-essential-vs-important.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .article-hero {
+      background: linear-gradient(135deg, #0f1f3d 0%, #1a3560 100%);
+      padding: 100px 0 60px;
+      color: #fff;
+    }
+    .article-hero .container { max-width: 800px; }
+    .article-breadcrumb {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 0.85rem; color: rgba(255,255,255,0.6); margin-bottom: 1.5rem;
+    }
+    .article-breadcrumb a { color: rgba(255,255,255,0.6); text-decoration: none; }
+    .article-breadcrumb a:hover { color: #fff; }
+    .article-breadcrumb span { color: rgba(255,255,255,0.4); }
+    .article-tag {
+      display: inline-block; background: rgba(29,111,232,0.3);
+      color: #7fb3ff; padding: 4px 14px; border-radius: 20px;
+      font-size: 0.8rem; font-weight: 600; margin-bottom: 1rem;
+    }
+    .article-hero h1 {
+      font-size: 2.2rem; font-weight: 800; line-height: 1.25;
+      margin-bottom: 1.25rem;
+    }
+    .article-meta {
+      display: flex; align-items: center; gap: 1.5rem;
+      font-size: 0.85rem; color: rgba(255,255,255,0.65);
+    }
+    .article-meta-item { display: flex; align-items: center; gap: 6px; }
+
+    .article-body-section { padding: 70px 0 80px; background: #f8fafc; }
+    .article-container { max-width: 800px; margin: 0 auto; padding: 0 1.5rem; }
+    .article-content {
+      background: #fff; border-radius: 16px;
+      box-shadow: 0 2px 24px rgba(29,111,232,0.07);
+      padding: 3rem 3.5rem;
+    }
+    @media (max-width: 640px) {
+      .article-content { padding: 2rem 1.5rem; }
+      .article-hero h1 { font-size: 1.6rem; }
+    }
+    .article-content p {
+      font-size: 1.05rem; line-height: 1.8; color: #333;
+      margin-bottom: 1.4rem;
+    }
+    .article-content h2 {
+      font-size: 1.45rem; font-weight: 700; color: #0f1f3d;
+      margin: 2.5rem 0 1rem; padding-left: 1rem;
+      border-left: 4px solid #1D6FE8;
+    }
+    .article-content h3 {
+      font-size: 1.1rem; font-weight: 600; color: #1a3560;
+      margin: 1.5rem 0 0.6rem;
+    }
+    .article-content ul {
+      margin: 0.75rem 0 1.4rem 1.5rem;
+      line-height: 1.8; color: #333; font-size: 1.02rem;
+    }
+    .article-content ul li { margin-bottom: 0.4rem; }
+    .info-box {
+      background: #e8f0fe; border-left: 4px solid #1D6FE8;
+      border-radius: 0 8px 8px 0; padding: 1.25rem 1.5rem;
+      margin: 1.75rem 0; font-size: 0.97rem; color: #1a3560;
+    }
+    .info-box strong { display: block; margin-bottom: 0.4rem; font-size: 1rem; }
+    .compare-table {
+      width: 100%; border-collapse: collapse; margin: 1.75rem 0;
+      font-size: 0.95rem;
+    }
+    .compare-table th {
+      background: #0f1f3d; color: #fff;
+      padding: 0.75rem 1rem; text-align: left; font-weight: 600;
+    }
+    .compare-table td {
+      padding: 0.7rem 1rem; border-bottom: 1px solid #e8edf5;
+      color: #333; vertical-align: top;
+    }
+    .compare-table tr:nth-child(even) td { background: #f8fafc; }
+    .checklist {
+      background: #f0f7ff; border-radius: 10px;
+      padding: 1.5rem 1.75rem; margin: 1.75rem 0;
+    }
+    .checklist h3 { margin-top: 0; color: #0f1f3d; }
+    .checklist ul { margin: 0.5rem 0 0 1.25rem; }
+    .checklist ul li { margin-bottom: 0.5rem; font-size: 1rem; }
+    .article-cta {
+      background: linear-gradient(135deg, #0f1f3d 0%, #1a3560 100%);
+      border-radius: 12px; padding: 2.5rem; margin-top: 3rem; text-align: center; color: #fff;
+    }
+    .article-cta h3 { font-size: 1.4rem; font-weight: 700; margin-bottom: 0.75rem; }
+    .article-cta p { color: rgba(255,255,255,0.8); margin-bottom: 1.5rem; font-size: 0.97rem; }
+    .article-nav { display: flex; justify-content: space-between; margin-top: 2.5rem; gap: 1rem; }
+    .article-nav a {
+      color: #1D6FE8; text-decoration: none; font-weight: 600;
+      font-size: 0.9rem; display: flex; align-items: center; gap: 6px;
+    }
+    .article-nav a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<!-- HEADER / NAV -->
+<header class="header" id="top">
+  <div class="container nav-container">
+    <a href="../index.html" class="logo">
+      <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 3L5 10V20C5 28.8 11.6 37.1 20 39C28.4 37.1 35 28.8 35 20V10L20 3Z" fill="#1D6FE8" opacity="0.2" stroke="#1D6FE8" stroke-width="2"/>
+        <path d="M20 8L9 13.5V20C9 26.6 13.9 32.7 20 34.5C26.1 32.7 31 26.6 31 20V13.5L20 8Z" fill="#1D6FE8" opacity="0.3"/>
+        <path d="M14 20L18 24L27 15" stroke="#1D6FE8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div class="logo-text">
+        <span class="logo-name">NIS2 Compliance</span>
+        <span class="logo-tagline">by BALTUM Bureau</span>
+      </div>
+    </a>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="navMenu">
+      <a href="../index.html#about" class="nav-link">About NIS2</a>
+      <a href="../index.html#services" class="nav-link">Our Services</a>
+      <a href="../index.html#who-needs" class="nav-link">Who Needs It</a>
+      <a href="/blog/" class="nav-link">Blog</a>
+      <a href="../index.html#contact" class="btn btn-primary btn-sm">Get Free Assessment</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ARTICLE HERO -->
+<section class="article-hero">
+  <div class="container">
+    <div class="article-breadcrumb">
+      <a href="../index.html">Home</a>
+      <span>›</span>
+      <a href="index.html">Blog</a>
+      <span>›</span>
+      <span>Essential vs Important Entities</span>
+    </div>
+    <div class="article-tag">Scope & Categories</div>
+    <h1>Essential vs Important Entities Under NIS2: Which Category Are You?</h1>
+    <div class="article-meta">
+      <div class="article-meta-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/><path d="M16 2V6M8 2V6M3 10H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        May 2026
+      </div>
+      <div class="article-meta-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 20C4 17.79 7.58 16 12 16C16.42 16 20 17.79 20 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        BALTUM Bureau
+      </div>
+      <div class="article-meta-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6V12L15 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        5 min read
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ARTICLE BODY -->
+<section class="article-body-section">
+  <div class="article-container">
+    <div class="article-content">
+
+      <p>One of the first questions any organization must answer when assessing NIS2 is not just <em>whether</em> the directive applies — but <em>how</em> it applies. NIS2 divides in-scope organizations into two distinct categories: <strong>Essential Entities</strong> and <strong>Important Entities</strong>. Both must implement the same technical and organizational security measures. But the level of regulatory scrutiny, the supervisory approach, and the potential fines differ significantly between the two.</p>
+
+      <p>Understanding which category you fall into is not merely an administrative exercise. It shapes your compliance roadmap, your relationship with your national regulator, and your exposure to enforcement action.</p>
+
+      <h2>Essential Entities: High-Impact Sectors Under Stricter Supervision</h2>
+
+      <p>Essential Entities operate in sectors where a disruption would have severe consequences for society, the economy, or public safety. NIS2 Annex I lists the following sectors as Essential:</p>
+      <ul>
+        <li><strong>Energy</strong> — electricity, oil, gas, hydrogen</li>
+        <li><strong>Transport</strong> — air, rail, water, road</li>
+        <li><strong>Banking</strong> — credit institutions</li>
+        <li><strong>Financial market infrastructure</strong> — trading venues, central counterparties</li>
+        <li><strong>Health</strong> — hospitals, healthcare providers, pharmaceutical manufacturers, research labs</li>
+        <li><strong>Drinking water and wastewater</strong></li>
+        <li><strong>Digital infrastructure</strong> — internet exchange points, DNS providers, TLD registries, cloud computing providers, data centres, CDNs, trust service providers, electronic communication networks</li>
+        <li><strong>ICT service management</strong> — managed service providers and managed security service providers (in B2B contexts)</li>
+        <li><strong>Public administration</strong> — central government entities</li>
+        <li><strong>Space</strong> — operators of ground-based infrastructure supporting space-based services</li>
+      </ul>
+
+      <p>To qualify as an Essential Entity in most of these sectors, your organization must meet the <strong>"large enterprise" size threshold</strong>: at least 250 employees <em>or</em> annual turnover exceeding €50 million and balance sheet exceeding €43 million. Some entities — such as certain digital infrastructure providers and public administration bodies — are classified as Essential regardless of size.</p>
+
+      <h2>Important Entities: Broader Scope, Lighter Touch</h2>
+
+      <p>Important Entities cover a wider range of sectors listed in NIS2 Annex II, where disruption would have significant but less immediately catastrophic consequences. These sectors include:</p>
+      <ul>
+        <li><strong>Postal and courier services</strong></li>
+        <li><strong>Waste management</strong></li>
+        <li><strong>Manufacture, production and distribution of chemicals</strong></li>
+        <li><strong>Production, processing and distribution of food</strong></li>
+        <li><strong>Manufacturing</strong> — medical devices, computers and electronics, machinery, motor vehicles, other transport equipment</li>
+        <li><strong>Digital providers</strong> — online marketplaces, online search engines, social networking platforms</li>
+        <li><strong>Research organisations</strong></li>
+      </ul>
+
+      <p>Important Entities must meet the <strong>"medium enterprise" size threshold</strong>: at least 50 employees <em>or</em> annual turnover exceeding €10 million. Organizations in Annex I sectors that are medium-sized (rather than large) also fall into the Important Entity category.</p>
+
+      <h2>Key Differences: Supervision, Fines, and Accountability</h2>
+
+      <p>The technical security requirements under Article 21 — covering risk management, incident response, supply chain security, cryptography, access control, and more — are identical for both categories. The key differences lie in how compliance is enforced:</p>
+
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Dimension</th>
+            <th>Essential Entities</th>
+            <th>Important Entities</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Supervisory approach</strong></td>
+            <td>Proactive — regulators can conduct audits, inspections, and targeted assessments at any time, without waiting for an incident</td>
+            <td>Reactive — oversight is primarily triggered by incidents, complaints, or evidence of non-compliance</td>
+          </tr>
+          <tr>
+            <td><strong>Maximum fines</strong></td>
+            <td>€10 million or 2% of global annual turnover (whichever is higher)</td>
+            <td>€7 million or 1.4% of global annual turnover (whichever is higher)</td>
+          </tr>
+          <tr>
+            <td><strong>Management liability</strong></td>
+            <td>Stricter — national authorities can temporarily ban senior managers from exercising management functions</td>
+            <td>Significant — but the personal liability provisions are applied with somewhat less intensity in practice</td>
+          </tr>
+          <tr>
+            <td><strong>Registration requirements</strong></td>
+            <td>Must register with national competent authority in most member states</td>
+            <td>Must register in most member states; some states apply lighter registration procedures</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="info-box">
+        <strong>Important:</strong>
+        Both Essential and Important Entities are subject to Article 21 security requirements and Article 23 incident reporting obligations. The category you're in does not reduce your compliance obligations — it determines how intensively you'll be monitored and how severely you'll be penalized if something goes wrong.
+      </div>
+
+      <h2>How to Self-Assess Your Category</h2>
+
+      <p>Use the following checklist to determine your likely classification:</p>
+
+      <div class="checklist">
+        <h3>🔍 NIS2 Category Self-Assessment Checklist</h3>
+        <ul>
+          <li>✅ <strong>Step 1:</strong> Is your primary activity in an Annex I or Annex II sector? (If neither, NIS2 likely does not apply)</li>
+          <li>✅ <strong>Step 2:</strong> If Annex I sector — do you have 250+ employees OR €50M+ turnover? If yes → <strong>Essential Entity</strong></li>
+          <li>✅ <strong>Step 3:</strong> If Annex I sector but below large threshold — do you have 50+ employees OR €10M+ turnover? If yes → <strong>Important Entity</strong></li>
+          <li>✅ <strong>Step 4:</strong> If Annex II sector — do you have 50+ employees OR €10M+ turnover? If yes → <strong>Important Entity</strong></li>
+          <li>✅ <strong>Step 5:</strong> Are you a digital infrastructure provider, DNS operator, TLD registry, or public administration body? → Likely <strong>Essential Entity regardless of size</strong></li>
+          <li>✅ <strong>Step 6:</strong> Check your member state's implementing legislation — some states have expanded scope or added national-level sectors</li>
+        </ul>
+      </div>
+
+      <h2>Conclusion: Same Rules, Different Stakes</h2>
+
+      <p>Whether you're classified as Essential or Important, you must comply with NIS2's Article 21 security requirements — there is no "lighter" version of the technical obligations. The difference is how strictly and how proactively your national authority will monitor you, and how high the financial consequences of failure will be.</p>
+
+      <p>For Essential Entities, the message is clear: assume you're under the regulatory microscope at all times. For Important Entities, reactive supervision doesn't mean low risk — a significant incident can trigger the full weight of enforcement at any moment.</p>
+
+      <p>The most important step right now is to <strong>accurately determine your classification</strong> and ensure your compliance program reflects the right level of rigor and urgency.</p>
+
+      <div class="article-cta">
+        <h3>Not Sure Which Category You're In?</h3>
+        <p>BALTUM Bureau can help you determine your NIS2 classification, assess your current compliance posture, and build a targeted roadmap — whether you're Essential or Important. Start with a free gap assessment.</p>
+        <a href="../index.html#contact" class="btn btn-primary btn-lg">Contact BALTUM for a Free Assessment</a>
+      </div>
+
+      <div class="article-nav">
+        <a href="index.html">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M19 12H5M11 6L5 12L11 18" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Back to Blog
+        </a>
+        <a href="nis2-incident-reporting.html">
+          NIS2 Incident Reporting
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12H19M13 6L19 12L13 18" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="../index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 40 40" fill="none"><path d="M20 3L5 10V20C5 28.8 11.6 37.1 20 39C28.4 37.1 35 28.8 35 20V10L20 3Z" fill="#1D6FE8" opacity="0.2" stroke="#1D6FE8" stroke-width="2"/><path d="M14 20L18 24L27 15" stroke="#1D6FE8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="logo-text">
+          <span class="logo-name">NIS2 Compliance</span>
+          <span class="logo-tagline">by BALTUM Bureau</span>
+        </div>
+      </a>
+      <p class="footer-desc">Professional NIS2 compliance consulting for EU organizations. Audits, consulting, and training by certified experts.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <div class="footer-col-title">Services</div>
+        <a href="../index.html#services">NIS2 Audit</a>
+        <a href="../index.html#services">NIS2 Consulting</a>
+        <a href="../index.html#services">NIS2 Training</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Resources</div>
+        <a href="../index.html#about">About NIS2</a>
+        <a href="../index.html#requirements">NIS2 Requirements</a>
+        <a href="index.html">Blog</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">BALTUM Group</div>
+        <a href="https://baltum.org" target="_blank" rel="noopener">baltum.org</a>
+        <a href="../index.html#contact">Contact Us</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <span>© 2026 BALTUM Bureau | nis2compliance.io</span>
+      <span class="footer-updated">Last updated: May 2026</span>
+      <div class="footer-bottom-links">
+        <a href="https://baltum.org" target="_blank" rel="noopener">baltum.org</a>
+        <a href="../index.html#privacy">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('mobileToggle');
+  const navMenu = document.getElementById('navMenu');
+  toggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    toggle.classList.toggle('active');
+  });
+  document.querySelectorAll('.nav-link, .nav .btn').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+      toggle.classList.remove('active');
+    });
+  });
+  window.addEventListener('scroll', () => {
+    const header = document.querySelector('.header');
+    if (window.scrollY > 20) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+</script>
+
+</body>
+</html>

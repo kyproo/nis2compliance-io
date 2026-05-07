@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NIS2 Incident Reporting: The 24-Hour and 72-Hour Rules Explained | BALTUM Bureau</title>
+  <meta name="description" content="NIS2 introduces strict incident notification timelines. Learn what counts as a significant incident, the three-stage reporting process, and how to prepare your organization." />
+  <meta name="keywords" content="NIS2 incident reporting, NIS2 24 hour rule, NIS2 72 hour reporting, significant incident NIS2, NIS2 compliance, BALTUM Bureau" />
+  <meta name="author" content="BALTUM Bureau" />
+  <meta property="og:title" content="NIS2 Incident Reporting: The 24-Hour and 72-Hour Rules Explained" />
+  <meta property="og:description" content="NIS2 introduces strict incident notification timelines — one of the most operationally demanding requirements. Learn what you need to do and when." />
+  <meta property="og:url" content="https://nis2compliance.io/blog/nis2-incident-reporting.html" />
+  <meta property="og:type" content="article" />
+  <link rel="canonical" href="https://nis2compliance.io/blog/nis2-incident-reporting.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .article-hero {
+      background: linear-gradient(135deg, #0f1f3d 0%, #1a3560 100%);
+      padding: 100px 0 60px;
+      color: #fff;
+    }
+    .article-hero .container { max-width: 800px; }
+    .article-breadcrumb {
+      display: flex; align-items: center; gap: 8px;
+      font-size: 0.85rem; color: rgba(255,255,255,0.6); margin-bottom: 1.5rem;
+    }
+    .article-breadcrumb a { color: rgba(255,255,255,0.6); text-decoration: none; }
+    .article-breadcrumb a:hover { color: #fff; }
+    .article-breadcrumb span { color: rgba(255,255,255,0.4); }
+    .article-tag {
+      display: inline-block; background: rgba(29,111,232,0.3);
+      color: #7fb3ff; padding: 4px 14px; border-radius: 20px;
+      font-size: 0.8rem; font-weight: 600; margin-bottom: 1rem;
+    }
+    .article-hero h1 {
+      font-size: 2.2rem; font-weight: 800; line-height: 1.25;
+      margin-bottom: 1.25rem;
+    }
+    .article-meta {
+      display: flex; align-items: center; gap: 1.5rem;
+      font-size: 0.85rem; color: rgba(255,255,255,0.65);
+    }
+    .article-meta-item { display: flex; align-items: center; gap: 6px; }
+
+    .article-body-section { padding: 70px 0 80px; background: #f8fafc; }
+    .article-container { max-width: 800px; margin: 0 auto; padding: 0 1.5rem; }
+    .article-content {
+      background: #fff; border-radius: 16px;
+      box-shadow: 0 2px 24px rgba(29,111,232,0.07);
+      padding: 3rem 3.5rem;
+    }
+    @media (max-width: 640px) {
+      .article-content { padding: 2rem 1.5rem; }
+      .article-hero h1 { font-size: 1.6rem; }
+    }
+    .article-content p {
+      font-size: 1.05rem; line-height: 1.8; color: #333;
+      margin-bottom: 1.4rem;
+    }
+    .article-content h2 {
+      font-size: 1.45rem; font-weight: 700; color: #0f1f3d;
+      margin: 2.5rem 0 1rem; padding-left: 1rem;
+      border-left: 4px solid #1D6FE8;
+    }
+    .article-content h3 {
+      font-size: 1.1rem; font-weight: 600; color: #1a3560;
+      margin: 1.5rem 0 0.6rem;
+    }
+    .article-content ul {
+      margin: 0.75rem 0 1.4rem 1.5rem;
+      line-height: 1.8; color: #333; font-size: 1.02rem;
+    }
+    .article-content ul li { margin-bottom: 0.4rem; }
+    .info-box {
+      background: #e8f0fe; border-left: 4px solid #1D6FE8;
+      border-radius: 0 8px 8px 0; padding: 1.25rem 1.5rem;
+      margin: 1.75rem 0; font-size: 0.97rem; color: #1a3560;
+    }
+    .info-box strong { display: block; margin-bottom: 0.4rem; font-size: 1rem; }
+    .warning-box {
+      background: #fff3cd; border-left: 4px solid #f59e0b;
+      border-radius: 0 8px 8px 0; padding: 1.25rem 1.5rem;
+      margin: 1.75rem 0; font-size: 0.97rem; color: #78350f;
+    }
+    .warning-box strong { display: block; margin-bottom: 0.4rem; font-size: 1rem; }
+    .timeline {
+      position: relative; padding-left: 2rem; margin: 1.75rem 0;
+    }
+    .timeline::before {
+      content: ''; position: absolute; left: 0.55rem; top: 0.5rem;
+      bottom: 0.5rem; width: 2px; background: #1D6FE8; opacity: 0.25;
+    }
+    .timeline-item {
+      position: relative; margin-bottom: 2rem;
+    }
+    .timeline-item::before {
+      content: ''; position: absolute; left: -1.55rem; top: 0.35rem;
+      width: 14px; height: 14px; border-radius: 50%;
+      background: #1D6FE8; border: 3px solid #fff;
+      box-shadow: 0 0 0 2px #1D6FE8;
+    }
+    .timeline-label {
+      display: inline-block; background: #1D6FE8; color: #fff;
+      padding: 2px 12px; border-radius: 20px; font-size: 0.8rem;
+      font-weight: 700; margin-bottom: 0.5rem;
+    }
+    .timeline-item h3 { margin: 0.25rem 0 0.5rem; }
+    .timeline-item p { margin: 0; font-size: 0.97rem; color: #555; }
+    .article-cta {
+      background: linear-gradient(135deg, #0f1f3d 0%, #1a3560 100%);
+      border-radius: 12px; padding: 2.5rem; margin-top: 3rem; text-align: center; color: #fff;
+    }
+    .article-cta h3 { font-size: 1.4rem; font-weight: 700; margin-bottom: 0.75rem; }
+    .article-cta p { color: rgba(255,255,255,0.8); margin-bottom: 1.5rem; font-size: 0.97rem; }
+    .article-nav { display: flex; justify-content: space-between; margin-top: 2.5rem; gap: 1rem; }
+    .article-nav a {
+      color: #1D6FE8; text-decoration: none; font-weight: 600;
+      font-size: 0.9rem; display: flex; align-items: center; gap: 6px;
+    }
+    .article-nav a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<!-- HEADER / NAV -->
+<header class="header" id="top">
+  <div class="container nav-container">
+    <a href="../index.html" class="logo">
+      <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 3L5 10V20C5 28.8 11.6 37.1 20 39C28.4 37.1 35 28.8 35 20V10L20 3Z" fill="#1D6FE8" opacity="0.2" stroke="#1D6FE8" stroke-width="2"/>
+        <path d="M20 8L9 13.5V20C9 26.6 13.9 32.7 20 34.5C26.1 32.7 31 26.6 31 20V13.5L20 8Z" fill="#1D6FE8" opacity="0.3"/>
+        <path d="M14 20L18 24L27 15" stroke="#1D6FE8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div class="logo-text">
+        <span class="logo-name">NIS2 Compliance</span>
+        <span class="logo-tagline">by BALTUM Bureau</span>
+      </div>
+    </a>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="navMenu">
+      <a href="../index.html#about" class="nav-link">About NIS2</a>
+      <a href="../index.html#services" class="nav-link">Our Services</a>
+      <a href="../index.html#who-needs" class="nav-link">Who Needs It</a>
+      <a href="/blog/" class="nav-link">Blog</a>
+      <a href="../index.html#contact" class="btn btn-primary btn-sm">Get Free Assessment</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ARTICLE HERO -->
+<section class="article-hero">
+  <div class="container">
+    <div class="article-breadcrumb">
+      <a href="../index.html">Home</a>
+      <span>›</span>
+      <a href="index.html">Blog</a>
+      <span>›</span>
+      <span>NIS2 Incident Reporting</span>
+    </div>
+    <div class="article-tag">Incident Management</div>
+    <h1>NIS2 Incident Reporting: The 24-Hour and 72-Hour Rules Explained</h1>
+    <div class="article-meta">
+      <div class="article-meta-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/><path d="M16 2V6M8 2V6M3 10H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        May 2026
+      </div>
+      <div class="article-meta-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 20C4 17.79 7.58 16 12 16C16.42 16 20 17.79 20 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        BALTUM Bureau
+      </div>
+      <div class="article-meta-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6V12L15 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        6 min read
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ARTICLE BODY -->
+<section class="article-body-section">
+  <div class="article-container">
+    <div class="article-content">
+
+      <p>Of all the requirements NIS2 introduces, the incident reporting obligations are among the most operationally demanding. Unlike many compliance controls that can be put in place gradually, incident reporting requires your organization to be ready <em>before</em> anything goes wrong — because when an incident occurs, you have hours, not days or weeks, to notify your national authority.</p>
+
+      <p>Article 23 of NIS2 establishes a structured, multi-stage reporting process with legally binding timelines. Missing these deadlines is not a technical failure — it is a compliance breach that can trigger significant fines and regulatory scrutiny independently of the incident itself.</p>
+
+      <h2>What Counts as a "Significant Incident"?</h2>
+
+      <p>Not every security event triggers NIS2 reporting obligations. NIS2 requires notification for <strong>significant incidents</strong> — those that have or could have a significant impact on the provision of services. When assessing significance, regulators consider:</p>
+
+      <ul>
+        <li><strong>Service disruption:</strong> Has the incident caused or could it cause a major disruption or outage to the organization's services?</li>
+        <li><strong>Number of affected users:</strong> How many natural or legal persons are affected, particularly those relying on the service?</li>
+        <li><strong>Duration:</strong> How long has the disruption lasted or is it expected to last?</li>
+        <li><strong>Geographic scope:</strong> Does the impact extend across regions or member states?</li>
+        <li><strong>Financial loss:</strong> What is the actual or estimated financial impact on the organization?</li>
+        <li><strong>Reputational damage:</strong> Has the incident caused or could it cause significant reputational harm?</li>
+        <li><strong>Data breach component:</strong> Does the incident involve unauthorized access to personal or sensitive data?</li>
+      </ul>
+
+      <div class="info-box">
+        <strong>Practical guidance:</strong>
+        When in doubt, report. NIS2 is designed to err on the side of notification. Regulators generally respond more favorably to organizations that over-report than to those who delay because they were "assessing severity." Your national CERT/CSIRT can help you make the determination.
+      </div>
+
+      <h2>The Three-Stage Reporting Process</h2>
+
+      <p>NIS2 Article 23 establishes a clear, three-stage reporting process. Each stage has its own timeline and content requirements:</p>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-label">⏱ Within 24 Hours</div>
+          <h3>Stage 1: Early Warning</h3>
+          <p>As soon as you become aware of a significant incident, you must submit an <strong>early warning</strong> to your national competent authority (NCA) or CERT/CSIRT. At this stage, you don't need all the answers — the early warning is simply an initial notification that an incident has occurred or is suspected. It should include: type of incident, whether you suspect malicious intent, and any cross-border impact. The clock starts from the moment your organization has awareness of the incident, not from the moment you finish your internal investigation.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-label">⏱ Within 72 Hours</div>
+          <h3>Stage 2: Incident Notification</h3>
+          <p>Within 72 hours of becoming aware of the incident, you must provide a detailed <strong>incident notification</strong>. This report should include an initial assessment of severity and impact, indicators of compromise (if available), the nature of the incident, and measures already taken or planned. If your investigation is still ongoing, submit what you know and indicate that the report will be updated.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-label">⏱ Within 1 Month</div>
+          <h3>Stage 3: Final Report</h3>
+          <p>Within one month of submitting the incident notification, you must provide a <strong>final report</strong> containing a full description of the incident, the root cause analysis, the impact assessment, the measures implemented to address the incident and prevent recurrence, and any cross-border implications. If the incident is still ongoing at the one-month mark, submit an interim progress report and provide the final report within one month of incident resolution.</p>
+        </div>
+      </div>
+
+      <h2>Who Do You Report To?</h2>
+
+      <p>Reports go to your <strong>National Competent Authority (NCA)</strong> — the designated regulator for NIS2 in the EU member state where you are established. In some countries, this is a dedicated cybersecurity agency; in others, it is a sector regulator (e.g., for energy, transport, or health).</p>
+
+      <p>In practice, many member states route initial reports through their national <strong>CERT/CSIRT</strong> (Computer Emergency Response Team / Computer Security Incident Response Team). Your CERT/CSIRT can also provide technical assistance during an active incident. Check your member state's implementing legislation to confirm the exact reporting channel.</p>
+
+      <p>If the incident affects multiple EU member states, you may need to notify authorities in each affected country. The NCA in your home member state typically coordinates with counterparts in other states, but you remain responsible for direct notification where required.</p>
+
+      <h2>What Happens If You Miss the Deadline?</h2>
+
+      <p>Failing to meet NIS2 reporting timelines is treated as a compliance breach — separate from the incident itself. Consequences can include:</p>
+
+      <ul>
+        <li><strong>Financial fines:</strong> Up to €10 million or 2% of global turnover for Essential Entities; up to €7 million or 1.4% for Important Entities</li>
+        <li><strong>Reputational damage:</strong> Regulators may publicly disclose the organization's non-compliance</li>
+        <li><strong>Increased regulatory scrutiny:</strong> A missed deadline is likely to trigger a more intensive supervisory review of your entire compliance posture</li>
+        <li><strong>Management liability:</strong> Senior executives can be held personally accountable for failures in incident reporting processes</li>
+      </ul>
+
+      <div class="warning-box">
+        <strong>⚠ A common misconception:</strong>
+        Many organizations believe that if they don't yet have all the facts, they shouldn't report. This is wrong under NIS2. The early warning requirement exists precisely because investigations take time. Submit what you know, when you know it — and update as the picture becomes clearer.
+      </div>
+
+      <h2>How to Prepare Before an Incident Occurs</h2>
+
+      <p>The worst time to design your incident reporting process is during an active incident. Build readiness now:</p>
+
+      <ul>
+        <li><strong>Develop an Incident Response Plan (IRP):</strong> Document detection, triage, escalation, and notification procedures. Identify who is responsible for triggering NIS2 notifications and who approves them.</li>
+        <li><strong>Identify your NCA and CERT/CSIRT:</strong> Know the exact contact details, reporting portal URLs, and required formats before you need them.</li>
+        <li><strong>Designate a NIS2 reporting contact:</strong> A named individual (and backup) who is authorized to communicate with authorities and who understands the reporting requirements.</li>
+        <li><strong>Invest in detection capabilities:</strong> You cannot report what you don't know about. SIEM tools, network monitoring, and endpoint detection help ensure incidents are identified quickly.</li>
+        <li><strong>Run tabletop exercises:</strong> Simulate significant incidents and practice the 24-hour and 72-hour notification workflow with your team.</li>
+        <li><strong>Integrate with GDPR reporting:</strong> Many incidents that trigger NIS2 reporting will also trigger GDPR breach notification obligations (72 hours to the data protection authority). Coordinate these processes to avoid duplication and inconsistency.</li>
+      </ul>
+
+      <div class="article-cta">
+        <h3>Build a Compliant Incident Response Process</h3>
+        <p>BALTUM Bureau helps organizations design and implement NIS2-compliant incident response procedures — from initial detection protocols to national authority reporting workflows. Don't wait for an incident to find the gaps.</p>
+        <a href="../index.html#contact" class="btn btn-primary btn-lg">Contact BALTUM for Incident Response Support</a>
+      </div>
+
+      <div class="article-nav">
+        <a href="nis2-essential-vs-important.html">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M19 12H5M11 6L5 12L11 18" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Essential vs Important Entities
+        </a>
+        <a href="nis2-supply-chain-security.html">
+          Supply Chain Security
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12H19M13 6L19 12L13 18" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="../index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 40 40" fill="none"><path d="M20 3L5 10V20C5 28.8 11.6 37.1 20 39C28.4 37.1 35 28.8 35 20V10L20 3Z" fill="#1D6FE8" opacity="0.2" stroke="#1D6FE8" stroke-width="2"/><path d="M14 20L18 24L27 15" stroke="#1D6FE8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="logo-text">
+          <span class="logo-name">NIS2 Compliance</span>
+          <span class="logo-tagline">by BALTUM Bureau</span>
+        </div>
+      </a>
+      <p class="footer-desc">Professional NIS2 compliance consulting for EU organizations. Audits, consulting, and training by certified experts.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <div class="footer-col-title">Services</div>
+        <a href="../index.html#services">NIS2 Audit</a>
+        <a href="../index.html#services">NIS2 Consulting</a>
+        <a href="../index.html#services">NIS2 Training</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Resources</div>
+        <a href="../index.html#about">About NIS2</a>
+        <a href="../index.html#requirements">NIS2 Requirements</a>
+        <a href="index.html">Blog</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">BALTUM Group</div>
+        <a href="https://baltum.org" target="_blank" rel="noopener">baltum.org</a>
+        <a href="../index.html#contact">Contact Us</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <span>© 2026 BALTUM Bureau | nis2compliance.io</span>
+      <span class="footer-updated">Last updated: May 2026</span>
+      <div class="footer-bottom-links">
+        <a href="https://baltum.org" target="_blank" rel="noopener">baltum.org</a>
+        <a href="../index.html#privacy">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const toggle = document.getElementById('mobileToggle');
+  const navMenu = document.getElementById('navMenu');
+  toggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+    toggle.classList.toggle('active');
+  });
+  document.querySelectorAll('.nav-link, .nav .btn').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+      toggle.classList.remove('active');
+    });
+  });
+  window.addEventListener('scroll', () => {
+    const header = document.querySelector('.header');
+    if (window.scrollY > 20) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+</script>
+
+</body>
+</html>
