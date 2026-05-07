@@ -681,11 +681,24 @@ body {
 .threshold-text strong { color: var(--navy); }
 
 /* ===== WHY BALTUM ===== */
+.why-intro {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.75;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
 .why-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
   margin-bottom: 40px;
+}
+
+.why-grid-6 {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .why-item {
@@ -708,6 +721,33 @@ body {
 .why-item:hover {
   box-shadow: var(--shadow-hover);
   transform: translateY(-3px);
+}
+
+.why-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--blue);
+  border-radius: 14px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: var(--shadow-card);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.why-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-3px);
+}
+.why-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+.why-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.65;
 }
 
 .why-icon {
@@ -733,10 +773,39 @@ body {
   line-height: 1.65;
 }
 
+/* Stats bar */
+.why-stats-bar {
+  display: flex;
+  justify-content: space-around;
+  background: #1a2a4a;
+  border-radius: 14px;
+  padding: 32px 24px;
+  margin-bottom: 32px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.why-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+.why-stat-number {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #4d9fff;
+  line-height: 1;
+}
+.why-stat-label {
+  font-size: 0.85rem;
+  color: #c5cfe8;
+  text-align: center;
+}
+
 .baltum-link-box {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   background: var(--blue-bg);
   border: 1px solid rgba(29, 111, 232, 0.2);
   border-radius: 14px;
@@ -1095,8 +1164,15 @@ body {
   .cards-2col,
   .cards-3col,
   .requirements-grid,
-  .why-grid {
+  .why-grid,
+  .why-grid-6 {
     grid-template-columns: 1fr;
+  }
+
+  .why-stats-bar {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
   }
 
   .service-card:last-child {
