@@ -3,58 +3,42 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NIS2 Compliance Consulting | BALTUM Bureau</title>
-  <meta name="description" content="BALTUM Bureau helps EU organizations achieve NIS2 compliance through expert audits, consulting, and training. NIS2 Directive EU 2022/2555 compliance specialists." />
-  <meta name="keywords" content="NIS2 compliance, NIS2 audit, NIS2 consulting, NIS2 training, EU cybersecurity directive, BALTUM Bureau, NIS2 2022/2555, cybersecurity compliance" />
+  <title>Consulenza Conformità NIS2 | BALTUM Bureau</title>
+  <meta name="description" content="BALTUM Bureau aiuta le organizzazioni dell'UE a raggiungere la conformità NIS2 attraverso audit, consulenza e formazione. Specialisti in Direttiva NIS2 EU 2022/2555." />
+  <meta name="keywords" content="conformità NIS2, audit NIS2, consulenza NIS2, formazione NIS2, direttiva cibersicurezza UE, BALTUM Bureau, NIS2 2022/2555" />
   <meta name="author" content="BALTUM Bureau" />
-  <meta property="og:title" content="NIS2 Compliance | BALTUM Bureau" />
-  <meta property="og:description" content="Expert NIS2 compliance consulting, audits, and training for EU organizations. Get compliant with the NIS2 Directive." />
-  <meta property="og:url" content="https://nis2compliance.io" />
+  <meta property="og:title" content="Conformità NIS2 | BALTUM Bureau" />
+  <meta property="og:description" content="Consulenza specializzata NIS2, audit e formazione per organizzazioni dell'UE. Raggiungi la conformità NIS2." />
+  <meta property="og:url" content="https://nis2compliance.io/it/" />
   <meta property="og:type" content="website" />
   <link rel="canonical" href="https://nis2compliance.io/it/" />
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="en" href="https://nis2compliance.io/" />
+  <link rel="alternate" hreflang="pl" href="https://nis2compliance.io/pl/" />
+  <link rel="alternate" hreflang="pt" href="https://nis2compliance.io/pt/" />
+  <link rel="alternate" hreflang="es" href="https://nis2compliance.io/es/" />
+  <link rel="alternate" hreflang="de" href="https://nis2compliance.io/de/" />
+  <link rel="alternate" hreflang="it" href="https://nis2compliance.io/it/" />
+  <link rel="alternate" hreflang="x-default" href="https://nis2compliance.io/" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../style.css" />
   <style>
-  /* Language Switcher */
-  .lang-switcher {
-    display: flex;
-    align-items: center;
-    gap: 0;
-    font-size: 0.82rem;
-    margin-right: 0.75rem;
-  }
-  .lang-switcher a {
-    color: #555;
-    text-decoration: none;
-    padding: 2px 5px;
-    border-radius: 3px;
-    font-weight: 500;
-    transition: color 0.2s;
-    white-space: nowrap;
-  }
-  .lang-switcher a:hover {
-    color: #1D6FE8;
-  }
-  .lang-switcher a.active {
-    color: #1D6FE8;
-    font-weight: 700;
-  }
-  .lang-switcher a:not(:last-child)::after {
-    content: "|";
-    margin-left: 5px;
-    color: #ccc;
-    font-weight: 400;
-  }
-  @media (max-width: 768px) {
-    .lang-switcher { display: none; }
-  }
+  .lang-switcher { display: flex; align-items: center; gap: 0; font-size: 0.82rem; margin-right: 0.75rem; }
+  .lang-switcher a { color: #555; text-decoration: none; padding: 2px 5px; border-radius: 3px; font-weight: 500; transition: color 0.2s; white-space: nowrap; }
+  .lang-switcher a:hover { color: #1D6FE8; }
+  .lang-switcher a.active { color: #1D6FE8; font-weight: 700; }
+  .lang-switcher a:not(:last-child)::after { content: "|"; margin-left: 5px; color: #ccc; font-weight: 400; }
+  @media (max-width: 768px) { .lang-switcher { display: none; } }
   </style>
 </head>
 <body>
-
-<!-- HEADER / NAV -->
 <header class="header" id="top">
   <div class="container nav-container">
     <a href="#top" class="logo">
@@ -68,906 +52,350 @@
         <span class="logo-tagline">by BALTUM Bureau</span>
       </div>
     </a>
-    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     <nav class="nav" id="navMenu">
-      <a href="#about" class="nav-link">About NIS2</a>
-      <a href="#services" class="nav-link">Our Services</a>
-      <a href="#who-needs" class="nav-link">Who Needs It</a>
-      <a href="#contact" class="nav-link">Contact</a>
+      <a href="#about" class="nav-link">Informazioni su NIS2</a>
+      <a href="#services" class="nav-link">I Nostri Servizi</a>
+      <a href="#who-needs" class="nav-link">Chi ne ha bisogno</a>
+      <a href="#contact" class="nav-link">Contatti</a>
       <div class="lang-switcher"><a href="/">EN</a><a href="/pl/">PL</a><a href="/pt/">PT</a><a href="/es/">ES</a><a href="/de/">DE</a><a href="/it/" class="active">IT</a></div>
-      <a href="#contact" class="btn btn-primary btn-sm">Get Free Assessment</a>
+      <a href="#contact" class="btn btn-primary btn-sm">Valutazione Gratuita</a>
     </nav>
   </div>
 </header>
-
-<!-- HERO -->
 <section class="hero" id="hero">
   <div class="hero-bg"></div>
   <div class="container">
     <div class="hero-content">
-      <div class="hero-badge">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7V13C3 17.97 7.02 22.59 12 24C16.98 22.59 21 17.97 21 13V7L12 2Z" fill="#fff" opacity="0.3" stroke="#fff" stroke-width="1.5"/></svg>
-        EU Cybersecurity Directive 2022/2555
-      </div>
-      <h1 class="hero-title">Is Your Organization<br /><span class="text-blue">NIS2 Compliant?</span></h1>
-      <p class="hero-subtitle">BALTUM Bureau helps EU organizations achieve NIS2 compliance through audits, consulting, and training. Stay ahead of regulatory requirements — protect your business, avoid fines.</p>
+      <div class="hero-badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7V13C3 17.97 7.02 22.59 12 24C16.98 22.59 21 17.97 21 13V7L12 2Z" fill="#fff" opacity="0.3" stroke="#fff" stroke-width="1.5"/></svg> Direttiva UE sulla Cibersicurezza 2022/2555</div>
+      <h1 class="hero-title">La tua organizzazione è<br /><span class="text-blue">conforme alla NIS2?</span></h1>
+      <p class="hero-subtitle">BALTUM Bureau aiuta le organizzazioni dell'UE a raggiungere la conformità NIS2 attraverso audit, consulenza e formazione. Stai al passo con i requisiti normativi — proteggi la tua azienda, evita sanzioni.</p>
       <div class="hero-actions">
-        <a href="#contact" class="btn btn-primary btn-lg">Start Assessment</a>
-        <a href="#about" class="btn btn-outline btn-lg">Learn About NIS2</a>
+        <a href="#contact" class="btn btn-primary btn-lg">Inizia Valutazione</a>
+        <a href="#about" class="btn btn-outline btn-lg">Scopri la NIS2</a>
       </div>
-      <div style="margin-top:1rem;">
-        <a href="https://baltum.ai" target="_blank" class="hero-link" style="color:#fff;text-decoration:underline;font-size:0.95rem;background:none;padding:0;border:none;">Try our AI-powered NIS2 Assessment →</a>
-      </div>
+      <div style="margin-top:1rem;"><a href="https://baltum.ai" target="_blank" class="hero-link" style="color:#fff;text-decoration:underline;font-size:0.95rem;background:none;padding:0;border:none;">Prova il nostro strumento di valutazione NIS2 con IA →</a></div>
     </div>
     <div class="stats-bar">
-      <div class="stat-item">
-        <div class="stat-value">160K+</div>
-        <div class="stat-label">Companies Affected</div>
-      </div>
+      <div class="stat-item"><div class="stat-value">160K+</div><div class="stat-label">Aziende Interessate</div></div>
       <div class="stat-divider"></div>
-      <div class="stat-item">
-        <div class="stat-value">€10M</div>
-        <div class="stat-label">Max Fine</div>
-      </div>
+      <div class="stat-item"><div class="stat-value">€10M</div><div class="stat-label">Sanzione Massima</div></div>
       <div class="stat-divider"></div>
-      <div class="stat-item">
-        <div class="stat-value">Oct 2024</div>
-        <div class="stat-label">EU Deadline</div>
-      </div>
+      <div class="stat-item"><div class="stat-value">Ott 2024</div><div class="stat-label">Scadenza UE</div></div>
       <div class="stat-divider"></div>
-      <div class="stat-item">
-        <div class="stat-value">15+</div>
-        <div class="stat-label">Sectors Covered</div>
-      </div>
+      <div class="stat-item"><div class="stat-value">15+</div><div class="stat-label">Settori Coperti</div></div>
     </div>
   </div>
 </section>
-
-<!-- ABOUT NIS2 -->
 <section class="section" id="about">
   <div class="container">
-    <div class="section-label">Understanding the Directive</div>
-    <h2 class="section-title">What is NIS2?</h2>
-    <p class="section-subtitle">NIS2 (Directive EU 2022/2555) is Europe's most comprehensive cybersecurity directive. It replaces NIS1 and introduces stricter requirements for risk management, incident reporting, and supply chain security across critical sectors.</p>
-
+    <div class="section-label">Comprendere la Direttiva</div>
+    <h2 class="section-title">Che cos'è la NIS2?</h2>
+    <p class="section-subtitle">La NIS2 (Direttiva UE 2022/2555) è la direttiva sulla cibersicurezza più completa dell'Europa. Sostituisce la NIS1 e introduce requisiti più rigorosi per la gestione dei rischi, la segnalazione degli incidenti e la sicurezza della catena di approvvigionamento nei settori critici.</p>
     <div class="cards-2col">
       <div class="card card-essential">
-        <div class="card-icon-wrap blue">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7V13C3 17.97 7.02 22.59 12 24C16.98 22.59 21 17.97 21 13V7L12 2Z" stroke="#1D6FE8" stroke-width="2" fill="none"/><circle cx="12" cy="13" r="3" fill="#1D6FE8"/></svg>
-        </div>
-        <h3 class="card-title">Essential Entities</h3>
-        <p class="card-desc">Energy, transport, banking, financial markets, health, drinking water, wastewater, digital infrastructure, ICT service management, public administration, space</p>
-        <div class="fine-badge fine-high">Fines up to <strong>€10M</strong> or <strong>2%</strong> of global annual turnover</div>
+        <div class="card-icon-wrap blue"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7V13C3 17.97 7.02 22.59 12 24C16.98 22.59 21 17.97 21 13V7L12 2Z" stroke="#1D6FE8" stroke-width="2" fill="none"/><circle cx="12" cy="13" r="3" fill="#1D6FE8"/></svg></div>
+        <h3 class="card-title">Entità Essenziali</h3>
+        <p class="card-desc">Energia, trasporti, banca, mercati finanziari, sanità, acqua potabile, acque reflue, infrastruttura digitale, gestione servizi TIC, amministrazione pubblica, spazio</p>
+        <div class="fine-badge fine-high">Sanzioni fino a <strong>€10M</strong> o <strong>2%</strong> del fatturato annuale globale</div>
       </div>
       <div class="card card-important">
-        <div class="card-icon-wrap orange">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="#fd7e14" stroke-width="2"/><path d="M8 12H16M12 8V16" stroke="#fd7e14" stroke-width="2" stroke-linecap="round"/></svg>
-        </div>
-        <h3 class="card-title">Important Entities</h3>
-        <p class="card-desc">Postal services, waste management, chemicals, food production, manufacturing, digital providers, research organizations</p>
-        <div class="fine-badge fine-medium">Fines up to <strong>€7M</strong> or <strong>1.4%</strong> of global annual turnover</div>
+        <div class="card-icon-wrap orange"><svg width="28" height="28" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="#fd7e14" stroke-width="2"/><path d="M8 12H16M12 8V16" stroke="#fd7e14" stroke-width="2" stroke-linecap="round"/></svg></div>
+        <h3 class="card-title">Entità Importanti</h3>
+        <p class="card-desc">Servizi postali, gestione rifiuti, chimica, produzione alimentare, produzione, fornitori digitali, organizzazioni di ricerca</p>
+        <div class="fine-badge fine-medium">Sanzioni fino a <strong>€7M</strong> o <strong>1.4%</strong> del fatturato annuale globale</div>
       </div>
     </div>
   </div>
 </section>
-
-<!-- SERVICES -->
 <section class="section" id="services">
   <div class="container">
-    <div class="section-label">What We Offer</div>
-    <h2 class="section-title">Our Services</h2>
-    <p class="section-subtitle">Practical NIS2 compliance support from certified auditors. We take your organization from gap analysis through to full compliance readiness — no buzzwords, just results.</p>
-
+    <div class="section-label">Quello che offriamo</div>
+    <h2 class="section-title">I Nostri Servizi</h2>
+    <p class="section-subtitle">Supporto pratico alla conformità NIS2 da revisori certificati. Guidiamo la tua organizzazione dall'analisi delle lacune alla piena preparazione della conformità — senza fronzoli, solo risultati.</p>
     <div class="cards-3col">
       <div class="service-card">
-        <div class="service-icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M9 11L12 14L22 4" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V5C3 3.9 3.9 3 5 3H16" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
+        <div class="service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M9 11L12 14L22 4" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V5C3 3.9 3.9 3 5 3H16" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
         <div class="service-number">01</div>
-        <h3 class="service-title">NIS2 Audit</h3>
+        <h3 class="service-title">Audit NIS2</h3>
         <ul class="service-list">
-          <li>Gap analysis against NIS2 requirements</li>
-          <li>Assessment of current cybersecurity posture</li>
-          <li>Detailed findings report with recommendations</li>
-          <li>Risk prioritization roadmap</li>
+          <li>Analisi dei gap rispetto ai requisiti NIS2</li>
+          <li>Valutazione della postura di cibersicurezza attuale</li>
+          <li>Rapporto dettagliato con conclusioni e raccomandazioni</li>
+          <li>Roadmap di prioritizzazione dei rischi</li>
         </ul>
-        <a href="#contact" class="btn btn-primary btn-full">Request Audit</a>
+        <a href="#contact" class="btn btn-primary btn-full">Richiedi Audit</a>
       </div>
-
       <div class="service-card service-card-featured">
-        <div class="featured-badge">Most Popular</div>
-        <div class="service-icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#1D6FE8" stroke-width="2"/><path d="M12 6V12L16 14" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round"/></svg>
-        </div>
+        <div class="featured-badge">Più Popolare</div>
+        <div class="service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#1D6FE8" stroke-width="2"/><path d="M12 6V12L16 14" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round"/></svg></div>
         <div class="service-number">02</div>
-        <h3 class="service-title">NIS2 Consulting</h3>
+        <h3 class="service-title">Consulenza NIS2</h3>
         <ul class="service-list">
-          <li>Full implementation support</li>
-          <li>Policy and procedure development</li>
-          <li>Risk assessment and treatment</li>
-          <li>Supply chain security review</li>
+          <li>Supporto completo all'implementazione</li>
+          <li>Sviluppo di politiche e procedure</li>
+          <li>Valutazione e trattamento dei rischi</li>
+          <li>Revisione della sicurezza della catena di approvvigionamento</li>
         </ul>
-        <a href="#contact" class="btn btn-primary btn-full">Start Consulting</a>
+        <a href="#contact" class="btn btn-primary btn-full">Avvia Consulenza</a>
       </div>
-
       <div class="service-card">
-        <div class="service-icon">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M17 21V19C17 16.79 15.21 15 13 15H5C2.79 15 1 16.79 1 19V21" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="#1D6FE8" stroke-width="2"/><path d="M23 21V19C23 17.13 21.74 15.56 20 15.13" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round"/><path d="M16 3.13C17.74 3.56 19 5.13 19 7C19 8.87 17.74 10.44 16 10.87" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round"/></svg>
-        </div>
+        <div class="service-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M17 21V19C17 16.79 15.21 15 13 15H5C2.79 15 1 16.79 1 19V21" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="#1D6FE8" stroke-width="2"/><path d="M23 21V19C23 17.13 21.74 15.56 20 15.13" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round"/><path d="M16 3.13C17.74 3.56 19 5.13 19 7C19 8.87 17.74 10.44 16 10.87" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round"/></svg></div>
         <div class="service-number">03</div>
-        <h3 class="service-title">NIS2 Training</h3>
+        <h3 class="service-title">Formazione NIS2</h3>
         <ul class="service-list">
-          <li>Management awareness training</li>
-          <li>Technical team workshops</li>
-          <li>Incident response drills</li>
-          <li>Certification preparation</li>
+          <li>Formazione sulla consapevolezza della leadership</li>
+          <li>Workshop per team tecnici</li>
+          <li>Esercitazioni di risposta agli incidenti</li>
+          <li>Preparazione alla certificazione</li>
         </ul>
-        <a href="#contact" class="btn btn-primary btn-full">Book Training</a>
+        <a href="#contact" class="btn btn-primary btn-full">Prenota Formazione</a>
       </div>
     </div>
   </div>
 </section>
-
-<!-- NIS2 REQUIREMENTS -->
 <section class="section" id="requirements">
   <div class="container">
-    <div class="section-label">Article 21 Measures</div>
-    <h2 class="section-title">Key NIS2 Requirements</h2>
-    <p class="section-subtitle">NIS2 Article 21 requires organizations to implement proportionate technical, operational, and organizational measures to manage cybersecurity risk. Here's what that means in practice.</p>
-
+    <div class="section-label">Misure dell'Articolo 21</div>
+    <h2 class="section-title">Requisiti Chiave di NIS2</h2>
+    <p class="section-subtitle">L'Articolo 21 della NIS2 richiede che le organizzazioni implementino misure tecniche, operative e organizzative proporzionate per gestire il rischio di cibersicurezza. Ecco cosa significa in pratica.</p>
     <div class="requirements-grid">
-      <div class="req-item">
-        <div class="req-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="#1D6FE8"/></svg>
-        </div>
-        <div class="req-content">
-          <div class="req-title">Risk Management</div>
-          <div class="req-desc">Systematic identification and treatment of cybersecurity risks</div>
-        </div>
-      </div>
-      <div class="req-item">
-        <div class="req-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#1D6FE8" stroke-width="2" stroke-linejoin="round"/><path d="M2 17L12 22L22 17" stroke="#1D6FE8" stroke-width="2" stroke-linejoin="round"/><path d="M2 12L12 17L22 12" stroke="#1D6FE8" stroke-width="2" stroke-linejoin="round"/></svg>
-        </div>
-        <div class="req-content">
-          <div class="req-title">Incident Handling</div>
-          <div class="req-desc">24h initial alert, 72h full notification to authorities</div>
-        </div>
-      </div>
-      <div class="req-item">
-        <div class="req-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M21 16V8C21 6.9 20.1 6 19 6H5C3.9 6 3 6.9 3 8V16C3 17.1 3.9 18 5 18H19C20.1 18 21 17.1 21 16Z" stroke="#1D6FE8" stroke-width="2"/><path d="M3 10H21" stroke="#1D6FE8" stroke-width="2"/></svg>
-        </div>
-        <div class="req-content">
-          <div class="req-title">Business Continuity</div>
-          <div class="req-desc">BCP, disaster recovery, and backup management plans</div>
-        </div>
-      </div>
-      <div class="req-item">
-        <div class="req-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M10 3H4C3.45 3 3 3.45 3 4V10C3 10.55 3.45 11 4 11H10C10.55 11 11 10.55 11 10V4C11 3.45 10.55 3 10 3Z" stroke="#1D6FE8" stroke-width="2"/><path d="M20 3H14C13.45 3 13 3.45 13 4V10C13 10.55 13.45 11 14 11H20C20.55 11 21 10.55 21 10V4C21 3.45 20.55 3 20 3Z" stroke="#1D6FE8" stroke-width="2"/><path d="M20 13H14C13.45 13 13 13.45 13 14V20C13 20.55 13.45 21 14 21H20C20.55 21 21 20.55 21 20V14C21 13.45 20.55 13 20 13Z" stroke="#1D6FE8" stroke-width="2"/><path d="M10 13H4C3.45 13 3 13.45 3 14V20C3 20.55 3.45 21 4 21H10C10.55 21 11 20.55 11 20V14C11 13.45 10.55 13 10 13Z" stroke="#1D6FE8" stroke-width="2"/></svg>
-        </div>
-        <div class="req-content">
-          <div class="req-title">Supply Chain Security</div>
-          <div class="req-desc">Vendor risk management and third-party security assessments</div>
-        </div>
-      </div>
-      <div class="req-item">
-        <div class="req-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="#1D6FE8" stroke-width="2"/><path d="M8 21H16M12 17V21" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round"/></svg>
-        </div>
-        <div class="req-content">
-          <div class="req-title">Network Security</div>
-          <div class="req-desc">Securing network and information systems infrastructure</div>
-        </div>
-      </div>
-      <div class="req-item">
-        <div class="req-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="11" width="18" height="11" rx="2" stroke="#1D6FE8" stroke-width="2"/><path d="M7 11V7C7 4.24 9.24 2 12 2C14.76 2 17 4.24 17 7V11" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="16" r="1.5" fill="#1D6FE8"/></svg>
-        </div>
-        <div class="req-content">
-          <div class="req-title">Access Control & MFA</div>
-          <div class="req-desc">Zero-trust access policies and multi-factor authentication</div>
-        </div>
-      </div>
-      <div class="req-item">
-        <div class="req-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="8" stroke="#1D6FE8" stroke-width="2"/><path d="M21 21L16.65 16.65" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round"/><path d="M11 8V11L13 13" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round"/></svg>
-        </div>
-        <div class="req-content">
-          <div class="req-title">Vulnerability Management</div>
-          <div class="req-desc">Regular scanning, patching, and disclosure procedures</div>
-        </div>
-      </div>
-      <div class="req-item">
-        <div class="req-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7V17L12 22L22 17V7L12 2Z" stroke="#1D6FE8" stroke-width="2" stroke-linejoin="round"/><path d="M12 2V22M2 7L22 17M22 7L2 17" stroke="#1D6FE8" stroke-width="1" opacity="0.5"/></svg>
-        </div>
-        <div class="req-content">
-          <div class="req-title">Encryption</div>
-          <div class="req-desc">Data encryption in transit and at rest, cryptographic controls</div>
-        </div>
-      </div>
-      <div class="req-item">
-        <div class="req-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M17 21V19C17 16.79 15.21 15 13 15H5C2.79 15 1 16.79 1 19V21" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="#1D6FE8" stroke-width="2"/><path d="M23 21V19C23 17.13 21.74 15.56 20 15.13" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round"/><path d="M16 3.13C17.74 3.56 19 5.13 19 7C19 8.87 17.74 10.44 16 10.87" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round"/></svg>
-        </div>
-        <div class="req-content">
-          <div class="req-title">HR Security & Awareness</div>
-          <div class="req-desc">Staff training, background checks, security culture programs</div>
-        </div>
-      </div>
-      <div class="req-item">
-        <div class="req-icon">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M20 7H4C2.9 7 2 7.9 2 9V19C2 20.1 2.9 21 4 21H20C21.1 21 22 20.1 22 19V9C22 7.9 21.1 7 20 7Z" stroke="#1D6FE8" stroke-width="2"/><path d="M16 7V5C16 3.9 15.1 3 14 3H10C8.9 3 8 3.9 8 5V7" stroke="#1D6FE8" stroke-width="2"/><path d="M12 12V16M10 14H14" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round"/></svg>
-        </div>
-        <div class="req-content">
-          <div class="req-title">Asset Management</div>
-          <div class="req-desc">Complete inventory of IT/OT assets with risk classification</div>
-        </div>
-      </div>
+      <div class="req-item"><div class="req-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="#1D6FE8"/></svg></div><div class="req-content"><div class="req-title">Gestione dei Rischi</div><div class="req-desc">Identificazione sistematica e trattamento dei rischi di cibersicurezza</div></div></div>
+      <div class="req-item"><div class="req-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#1D6FE8" stroke-width="2" stroke-linejoin="round"/><path d="M2 17L12 22L22 17" stroke="#1D6FE8" stroke-width="2" stroke-linejoin="round"/><path d="M2 12L12 17L22 12" stroke="#1D6FE8" stroke-width="2" stroke-linejoin="round"/></svg></div><div class="req-content"><div class="req-title">Gestione degli Incidenti</div><div class="req-desc">Avviso iniziale in 24h, notifica completa alle autorità in 72h</div></div></div>
+      <div class="req-item"><div class="req-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M21 16V8C21 6.9 20.1 6 19 6H5C3.9 6 3 6.9 3 8V16C3 17.1 3.9 18 5 18H19C20.1 18 21 17.1 21 16Z" stroke="#1D6FE8" stroke-width="2"/><path d="M3 10H21" stroke="#1D6FE8" stroke-width="2"/></svg></div><div class="req-content"><div class="req-title">Continuità Aziendale</div><div class="req-desc">BCP, recupero da disastri e piani di gestione dei backup</div></div></div>
+      <div class="req-item"><div class="req-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M10 3H4C3.45 3 3 3.45 3 4V10C3 10.55 3.45 11 4 11H10C10.55 11 11 10.55 11 10V4C11 3.45 10.55 3 10 3Z" stroke="#1D6FE8" stroke-width="2"/><path d="M20 3H14C13.45 3 13 3.45 13 4V10C13 10.55 13.45 11 14 11H20C20.55 11 21 10.55 21 10V4C21 3.45 20.55 3 20 3Z" stroke="#1D6FE8" stroke-width="2"/><path d="M20 13H14C13.45 13 13 13.45 13 14V20C13 20.55 13.45 21 14 21H20C20.55 21 21 20.55 21 20V14C21 13.45 20.55 13 20 13Z" stroke="#1D6FE8" stroke-width="2"/><path d="M10 13H4C3.45 13 3 13.45 3 14V20C3 20.55 3.45 21 4 21H10C10.55 21 11 20.55 11 20V14C11 13.45 10.55 13 10 13Z" stroke="#1D6FE8" stroke-width="2"/></svg></div><div class="req-content"><div class="req-title">Sicurezza della Catena di Approvvigionamento</div><div class="req-desc">Gestione del rischio dei fornitori e valutazioni della sicurezza di terzi</div></div></div>
+      <div class="req-item"><div class="req-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="2" y="3" width="20" height="14" rx="2" stroke="#1D6FE8" stroke-width="2"/><path d="M8 21H16M12 17V21" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round"/></svg></div><div class="req-content"><div class="req-title">Sicurezza della Rete</div><div class="req-desc">Protezione dell'infrastruttura di rete e dei sistemi informativi</div></div></div>
+      <div class="req-item"><div class="req-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="11" width="18" height="11" rx="2" stroke="#1D6FE8" stroke-width="2"/><path d="M7 11V7C7 4.24 9.24 2 12 2C14.76 2 17 4.24 17 7V11" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="16" r="1.5" fill="#1D6FE8"/></svg></div><div class="req-content"><div class="req-title">Controllo degli Accessi e MFA</div><div class="req-desc">Politiche di accesso zero-trust e autenticazione multifattore</div></div></div>
+      <div class="req-item"><div class="req-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="8" stroke="#1D6FE8" stroke-width="2"/><path d="M21 21L16.65 16.65" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round"/><path d="M11 8V11L13 13" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round"/></svg></div><div class="req-content"><div class="req-title">Gestione delle Vulnerabilità</div><div class="req-desc">Scansione regolare, patching e procedure di divulgazione</div></div></div>
+      <div class="req-item"><div class="req-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7V17L12 22L22 17V7L12 2Z" stroke="#1D6FE8" stroke-width="2" stroke-linejoin="round"/><path d="M12 2V22M2 7L22 17M22 7L2 17" stroke="#1D6FE8" stroke-width="1" opacity="0.5"/></svg></div><div class="req-content"><div class="req-title">Crittografia</div><div class="req-desc">Crittografia dei dati in transito e a riposo, controlli crittografici</div></div></div>
+      <div class="req-item"><div class="req-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M17 21V19C17 16.79 15.21 15 13 15H5C2.79 15 1 16.79 1 19V21" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="#1D6FE8" stroke-width="2"/><path d="M23 21V19C23 17.13 21.74 15.56 20 15.13" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round"/><path d="M16 3.13C17.74 3.56 19 5.13 19 7C19 8.87 17.74 10.44 16 10.87" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round"/></svg></div><div class="req-content"><div class="req-title">Sicurezza delle Risorse Umane e Consapevolezza</div><div class="req-desc">Formazione del personale, controlli dei precedenti, programmi di cultura della sicurezza</div></div></div>
+      <div class="req-item"><div class="req-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M20 7H4C2.9 7 2 7.9 2 9V19C2 20.1 2.9 21 4 21H20C21.1 21 22 20.1 22 19V9C22 7.9 21.1 7 20 7Z" stroke="#1D6FE8" stroke-width="2"/><path d="M16 7V5C16 3.9 15.1 3 14 3H10C8.9 3 8 3.9 8 5V7" stroke="#1D6FE8" stroke-width="2"/><path d="M12 12V16M10 14H14" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round"/></svg></div><div class="req-content"><div class="req-title">Gestione dei Beni</div><div class="req-desc">Inventario completo dei beni IT/OT con classificazione dei rischi</div></div></div>
     </div>
   </div>
 </section>
-
-<!-- WHO NEEDS IT -->
 <section class="section" id="who-needs">
   <div class="container">
-    <div class="section-label">Scope & Applicability</div>
-    <h2 class="section-title">Who Does NIS2 Apply To?</h2>
-    <p class="section-subtitle">NIS2 covers organizations in critical sectors with <strong>50+ employees</strong> OR <strong>€10M+ annual turnover</strong>. Member states may extend the scope further — if you're unsure, ask us.</p>
-
+    <div class="section-label">Portata e Applicabilità</div>
+    <h2 class="section-title">A Chi si Applica la NIS2?</h2>
+    <p class="section-subtitle">La NIS2 riguarda le organizzazioni nei settori critici con <strong>50+ dipendenti</strong> O <strong>€10M+ di fatturato annuale</strong>. Gli Stati Membri possono ampliare l'ambito — in caso di dubbi, contattaci.</p>
     <div class="sectors-grid">
-      <div class="sector-item">
-        <div class="sector-icon">⚡</div>
-        <div class="sector-name">Energy</div>
-      </div>
-      <div class="sector-item">
-        <div class="sector-icon">🚂</div>
-        <div class="sector-name">Transport</div>
-      </div>
-      <div class="sector-item">
-        <div class="sector-icon">🏦</div>
-        <div class="sector-name">Banking</div>
-      </div>
-      <div class="sector-item">
-        <div class="sector-icon">📈</div>
-        <div class="sector-name">Financial Markets</div>
-      </div>
-      <div class="sector-item">
-        <div class="sector-icon">🏥</div>
-        <div class="sector-name">Health</div>
-      </div>
-      <div class="sector-item">
-        <div class="sector-icon">💧</div>
-        <div class="sector-name">Drinking Water</div>
-      </div>
-      <div class="sector-item">
-        <div class="sector-icon">🌊</div>
-        <div class="sector-name">Wastewater</div>
-      </div>
-      <div class="sector-item">
-        <div class="sector-icon">🌐</div>
-        <div class="sector-name">Digital Infrastructure</div>
-      </div>
-      <div class="sector-item">
-        <div class="sector-icon">☁️</div>
-        <div class="sector-name">ICT Service Mgmt</div>
-      </div>
-      <div class="sector-item">
-        <div class="sector-icon">🏛️</div>
-        <div class="sector-name">Public Administration</div>
-      </div>
-      <div class="sector-item">
-        <div class="sector-icon">🚀</div>
-        <div class="sector-name">Space</div>
-      </div>
-      <div class="sector-item">
-        <div class="sector-icon">📦</div>
-        <div class="sector-name">Postal Services</div>
-      </div>
-      <div class="sector-item">
-        <div class="sector-icon">♻️</div>
-        <div class="sector-name">Waste Management</div>
-      </div>
-      <div class="sector-item">
-        <div class="sector-icon">🧪</div>
-        <div class="sector-name">Chemicals</div>
-      </div>
-      <div class="sector-item">
-        <div class="sector-icon">🍎</div>
-        <div class="sector-name">Food</div>
-      </div>
-      <div class="sector-item">
-        <div class="sector-icon">🏭</div>
-        <div class="sector-name">Manufacturing</div>
-      </div>
-      <div class="sector-item">
-        <div class="sector-icon">💻</div>
-        <div class="sector-name">Digital Providers</div>
-      </div>
+      <div class="sector-item"><div class="sector-icon">⚡</div><div class="sector-name">Energia</div></div>
+      <div class="sector-item"><div class="sector-icon">🚂</div><div class="sector-name">Trasporti</div></div>
+      <div class="sector-item"><div class="sector-icon">🏦</div><div class="sector-name">Banca</div></div>
+      <div class="sector-item"><div class="sector-icon">📈</div><div class="sector-name">Mercati Finanziari</div></div>
+      <div class="sector-item"><div class="sector-icon">🏥</div><div class="sector-name">Sanità</div></div>
+      <div class="sector-item"><div class="sector-icon">💧</div><div class="sector-name">Acqua Potabile</div></div>
+      <div class="sector-item"><div class="sector-icon">🌊</div><div class="sector-name">Acque Reflue</div></div>
+      <div class="sector-item"><div class="sector-icon">🌐</div><div class="sector-name">Infrastruttura Digitale</div></div>
+      <div class="sector-item"><div class="sector-icon">☁️</div><div class="sector-name">Gestione Servizi TIC</div></div>
+      <div class="sector-item"><div class="sector-icon">🏛️</div><div class="sector-name">Amministrazione Pubblica</div></div>
+      <div class="sector-item"><div class="sector-icon">🚀</div><div class="sector-name">Spazio</div></div>
+      <div class="sector-item"><div class="sector-icon">📦</div><div class="sector-name">Servizi Postali</div></div>
+      <div class="sector-item"><div class="sector-icon">♻️</div><div class="sector-name">Gestione Rifiuti</div></div>
+      <div class="sector-item"><div class="sector-icon">🧪</div><div class="sector-name">Chimica</div></div>
+      <div class="sector-item"><div class="sector-icon">🍎</div><div class="sector-name">Alimentare</div></div>
+      <div class="sector-item"><div class="sector-icon">🏭</div><div class="sector-name">Produzione</div></div>
+      <div class="sector-item"><div class="sector-icon">💻</div><div class="sector-name">Fornitori Digitali</div></div>
     </div>
-
     <div class="threshold-box">
-      <div class="threshold-icon">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#1D6FE8" stroke-width="2"/><path d="M12 8V12L14 14" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round"/></svg>
-      </div>
-      <div class="threshold-text">
-        <strong>Size Thresholds:</strong> Medium and large organizations — <strong>50+ employees</strong> OR <strong>€10M+ annual turnover</strong> operating in the sectors above must comply with NIS2.
-      </div>
+      <div class="threshold-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#1D6FE8" stroke-width="2"/><path d="M12 8V12L14 14" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round"/></svg></div>
+      <div class="threshold-text"><strong>Soglie di Dimensione:</strong> Organizzazioni medie e grandi — <strong>50+ dipendenti</strong> O <strong>€10M+ di fatturato annuale</strong> che operano nei settori sopra devono conformarsi a NIS2.</div>
     </div>
   </div>
 </section>
-
-<!-- WHY BALTUM -->
 <section class="section" id="why-baltum" style="background:#F5F7FA;">
   <div class="container">
-    <div class="section-label">Our Expertise</div>
-    <h2 class="section-title">Why Choose BALTUM Bureau?</h2>
-    <p class="section-subtitle">International certification and compliance group with a worldwide network of auditors.</p>
-
-    <p class="why-intro">BALTUM is an international certification and compliance group delivering ISO management system certification, cybersecurity frameworks, and regulatory compliance programmes globally. We provide an integrated path from readiness assessment through to formal certification — in cooperation with accredited international certification bodies.</p>
-
+    <div class="section-label">La Nostra Esperienza</div>
+    <h2 class="section-title">Perché Scegliere BALTUM Bureau?</h2>
+    <p class="section-subtitle">Gruppo internazionale di certificazione e conformità con rete mondiale di revisori.</p>
+    <p class="why-intro">BALTUM è un gruppo internazionale di certificazione e conformità che fornisce certificazione di sistemi di gestione ISO, framework di cibersicurezza e programmi di conformità normativa a livello mondiale. Offriamo un percorso integrato dalla valutazione della preparazione fino alla certificazione formale — in cooperazione con organismi di certificazione internazionali accreditati.</p>
     <div class="why-grid why-grid-6">
-      <div class="why-card">
-        <div class="why-icon">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7V17L12 22L22 17V7L12 2Z" stroke="#1D6FE8" stroke-width="2" stroke-linejoin="round"/><path d="M12 7V12L15 14" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round"/></svg>
-        </div>
-        <h3>15+ Frameworks Covered</h3>
-        <p>ISO 27001, ISO 27701, ISO 42001, ISO 9001, ISO 22301, ISO 20000-1, SOC 2, PCI DSS, GDPR, DORA, NIS2, ENS, NIST CSF, Cyber Essentials and more — all under one roof.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-icon">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none"><path d="M9 11L12 14L22 4" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V5C3 3.9 3.9 3 5 3H16" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round"/></svg>
-        </div>
-        <h3>End-to-End Service</h3>
-        <p>From initial gap assessment and documentation through internal audit, management review, and final certification audit — we manage the entire process.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-icon">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#1D6FE8" stroke-width="2"/><path d="M2 12H22M12 2C9.33 4.67 8 7.33 8 12C8 16.67 9.33 19.33 12 22M12 2C14.67 4.67 16 7.33 16 12C16 16.67 14.67 19.33 12 22" stroke="#1D6FE8" stroke-width="2"/></svg>
-        </div>
-        <h3>Worldwide Auditor Network</h3>
-        <p>Our certified auditors operate across Europe, UK, USA, Middle East, and Asia. Remote-first delivery means no travel costs and faster turnaround.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-icon">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7V13C3 17.97 7.02 22.59 12 24C16.98 22.59 21 17.97 21 13V7L12 2Z" stroke="#1D6FE8" stroke-width="2" stroke-linejoin="round"/></svg>
-        </div>
-        <h3>Integrated Implementation</h3>
-        <p>Implement multiple standards simultaneously. Shared documentation and controls mean up to 40% cost savings vs. separate engagements.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-icon">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none"><path d="M3 9L12 2L21 9V20C21 20.55 20.55 21 20 21H15V15H9V21H4C3.45 21 3 20.55 3 20V9Z" stroke="#1D6FE8" stroke-width="2" stroke-linejoin="round"/></svg>
-        </div>
-        <h3>EU Regulatory Expertise</h3>
-        <p>Deep knowledge of EU cybersecurity regulations: NIS2, DORA, GDPR, ENS (Spain), and sector-specific requirements across 15 industries.</p>
-      </div>
-      <div class="why-card">
-        <div class="why-icon">
-          <svg width="36" height="36" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2C13.54 2 15 2.36 16.28 3" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round"/><path d="M22 4L12 14.01L9 11.01" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-        <h3>Proven Track Record</h3>
-        <p>Clients across IT, finance, healthcare, manufacturing, and professional services. Typical ISO 27001 engagement: 3–6 months from kick-off to certificate.</p>
-      </div>
+      <div class="why-card"><div class="why-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7V17L12 22L22 17V7L12 2Z" stroke="#1D6FE8" stroke-width="2" stroke-linejoin="round"/><path d="M12 7V12L15 14" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round"/></svg></div><h3>15+ Framework Coperti</h3><p>ISO 27001, ISO 27701, ISO 42001, ISO 9001, ISO 22301, ISO 20000-1, SOC 2, PCI DSS, GDPR, DORA, NIS2, ENS, NIST CSF, Cyber Essentials e altro — tutto sotto lo stesso tetto.</p></div>
+      <div class="why-card"><div class="why-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none"><path d="M9 11L12 14L22 4" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21 12V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V5C3 3.9 3.9 3 5 3H16" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round"/></svg></div><h3>Servizio Completo</h3><p>Dalla valutazione iniziale dei gap e documentazione fino a audit interno, revisione della gestione e audit di certificazione finale — gestiamo l'intero processo.</p></div>
+      <div class="why-card"><div class="why-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#1D6FE8" stroke-width="2"/><path d="M2 12H22M12 2C9.33 4.67 8 7.33 8 12C8 16.67 9.33 19.33 12 22M12 2C14.67 4.67 16 7.33 16 12C16 16.67 14.67 19.33 12 22" stroke="#1D6FE8" stroke-width="2"/></svg></div><h3>Rete Mondiale di Revisori</h3><p>I nostri revisori certificati operano in Europa, Regno Unito, USA, Medio Oriente e Asia. La fornitura remota significa senza costi di viaggio e tempi di turnaround più rapidi.</p></div>
+      <div class="why-card"><div class="why-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none"><path d="M12 2L3 7V13C3 17.97 7.02 22.59 12 24C16.98 22.59 21 17.97 21 13V7L12 2Z" stroke="#1D6FE8" stroke-width="2" stroke-linejoin="round"/></svg></div><h3>Implementazione Integrata</h3><p>Implementa più standard contemporaneamente. Documentazione e controlli condivisi significano fino al 40% di risparmio sui costi rispetto ai progetti separati.</p></div>
+      <div class="why-card"><div class="why-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none"><path d="M3 9L12 2L21 9V20C21 20.55 20.55 21 20 21H15V15H9V21H4C3.45 21 3 20.55 3 20V9Z" stroke="#1D6FE8" stroke-width="2" stroke-linejoin="round"/></svg></div><h3>Competenza nella Regolamentazione UE</h3><p>Conoscenza approfondita delle normative sulla cibersicurezza dell'UE: NIS2, DORA, GDPR, ENS (Spagna) e requisiti specifici dei settori in 15 industrie.</p></div>
+      <div class="why-card"><div class="why-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none"><path d="M22 11.08V12C22 17.52 17.52 22 12 22C6.48 22 2 17.52 2 12C2 6.48 6.48 2 12 2C13.54 2 15 2.36 16.28 3" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round"/><path d="M22 4L12 14.01L9 11.01" stroke="#1D6FE8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Comprovato Track Record</h3><p>Clienti in IT, finanza, sanità, produzione e servizi professionali. Tipico engagement ISO 27001: 3–6 mesi dal kick-off al certificato.</p></div>
     </div>
-
-    <!-- Stats bar -->
     <div class="why-stats-bar">
-      <div class="why-stat">
-        <span class="why-stat-number">15+</span>
-        <span class="why-stat-label">Standards</span>
-      </div>
-      <div class="why-stat">
-        <span class="why-stat-number">50+</span>
-        <span class="why-stat-label">Countries</span>
-      </div>
-      <div class="why-stat">
-        <span class="why-stat-number">3–6</span>
-        <span class="why-stat-label">months typical timeline</span>
-      </div>
-      <div class="why-stat">
-        <span class="why-stat-number">100%</span>
-        <span class="why-stat-label">Remote-first delivery</span>
-      </div>
+      <div class="why-stat"><span class="why-stat-number">15+</span><span class="why-stat-label">Standard</span></div>
+      <div class="why-stat"><span class="why-stat-number">50+</span><span class="why-stat-label">Paesi</span></div>
+      <div class="why-stat"><span class="why-stat-number">3–6</span><span class="why-stat-label">mesi tipico</span></div>
+      <div class="why-stat"><span class="why-stat-number">100%</span><span class="why-stat-label">Fornitura remota</span></div>
     </div>
-
-    <div class="baltum-link-box">
-      <a href="https://baltum.org" target="_blank" rel="noopener" class="btn btn-outline">Learn more about BALTUM → baltum.org</a>
-      <a href="https://baltum.ai" target="_blank" rel="noopener" class="btn btn-outline">AI-powered assessments → baltum.ai</a>
-    </div>
+    <div class="baltum-link-box"><a href="https://baltum.org" target="_blank" rel="noopener" class="btn btn-outline">Scopri di più su BALTUM → baltum.org</a><a href="https://baltum.ai" target="_blank" rel="noopener" class="btn btn-outline">Valutazioni con IA → baltum.ai</a></div>
   </div>
 </section>
-
-<!-- NIS2 & STANDARDS OVERLAP -->
 <section class="section" id="standards-overlap">
   <div class="container">
-    <div class="section-label">Standards Alignment</div>
-    <h2 class="section-title">NIS2 & Other Standards</h2>
-    <p class="section-subtitle">Already certified against ISO 27001 or SOC 2? A significant portion of NIS2 work is already done. Here's a straightforward breakdown of how much overlaps.</p>
-
+    <div class="section-label">Allineamento Standard</div>
+    <h2 class="section-title">NIS2 e Altri Standard</h2>
+    <p class="section-subtitle">Già certificato contro ISO 27001 o SOC 2? Una parte significativa del lavoro NIS2 è già fatta. Ecco una visione chiara di quanto si sovrappone.</p>
     <div class="overlap-grid">
-
-      <!-- ISO 27001 -->
       <div class="overlap-card">
-        <div class="overlap-header">
-          <div class="overlap-standard">ISO 27001</div>
-          <div class="overlap-pct">75–80% overlap</div>
-        </div>
-        <div class="overlap-bar-wrap">
-          <div class="overlap-bar" style="width:77%"></div>
-        </div>
+        <div class="overlap-header"><div class="overlap-standard">ISO 27001</div><div class="overlap-pct">75–80% sovrapposizione</div></div>
+        <div class="overlap-bar-wrap"><div class="overlap-bar" style="width:77%"></div></div>
         <div class="overlap-badges">
-          <div class="badge-group">
-            <span class="badge badge-covered">✓ Covered</span>
-            <span class="badge-item">Risk management</span>
-            <span class="badge-item">Access control</span>
-            <span class="badge-item">Incident response</span>
-            <span class="badge-item">Encryption</span>
-            <span class="badge-item">Asset management</span>
-            <span class="badge-item">Vulnerability management</span>
-            <span class="badge-item">Supplier security</span>
-            <span class="badge-item">HR security</span>
-          </div>
-          <div class="badge-group">
-            <span class="badge badge-gap">⚠ NIS2 Gaps</span>
-            <span class="badge-item">Personal liability of management</span>
-            <span class="badge-item">24/72h incident reporting timelines</span>
-            <span class="badge-item">Sector-specific requirements</span>
-          </div>
+          <div class="badge-group"><span class="badge badge-covered">✓ Coperto</span><span class="badge-item">Gestione dei rischi</span><span class="badge-item">Controllo degli accessi</span><span class="badge-item">Risposta agli incidenti</span><span class="badge-item">Crittografia</span><span class="badge-item">Gestione dei beni</span><span class="badge-item">Gestione delle vulnerabilità</span><span class="badge-item">Sicurezza dei fornitori</span><span class="badge-item">Sicurezza delle risorse umane</span></div>
+          <div class="badge-group"><span class="badge badge-gap">⚠ Gap NIS2</span><span class="badge-item">Responsabilità personale della leadership</span><span class="badge-item">Tempi di reporte 24/72h</span><span class="badge-item">Requisiti specifici del settore</span></div>
         </div>
       </div>
-
-      <!-- ISO 9001 -->
       <div class="overlap-card">
-        <div class="overlap-header">
-          <div class="overlap-standard">ISO 9001</div>
-          <div class="overlap-pct">25–30% overlap</div>
-        </div>
-        <div class="overlap-bar-wrap">
-          <div class="overlap-bar" style="width:27%"></div>
-        </div>
+        <div class="overlap-header"><div class="overlap-standard">ISO 9001</div><div class="overlap-pct">25–30% sovrapposizione</div></div>
+        <div class="overlap-bar-wrap"><div class="overlap-bar" style="width:27%"></div></div>
         <div class="overlap-badges">
-          <div class="badge-group">
-            <span class="badge badge-covered">✓ Covered</span>
-            <span class="badge-item">Risk-based thinking</span>
-            <span class="badge-item">Document control</span>
-            <span class="badge-item">Internal audit</span>
-            <span class="badge-item">Management review</span>
-            <span class="badge-item">Continual improvement</span>
-          </div>
-          <div class="badge-group">
-            <span class="badge badge-gap">⚠ NIS2 Gaps</span>
-            <span class="badge-item">Most cybersecurity controls</span>
-            <span class="badge-item">Incident handling</span>
-            <span class="badge-item">Network security</span>
-            <span class="badge-item">Technical measures</span>
-          </div>
+          <div class="badge-group"><span class="badge badge-covered">✓ Coperto</span><span class="badge-item">Pensiero basato su rischio</span><span class="badge-item">Controllo dei documenti</span><span class="badge-item">Audit interno</span><span class="badge-item">Revisione dalla gestione</span><span class="badge-item">Miglioramento continuo</span></div>
+          <div class="badge-group"><span class="badge badge-gap">⚠ Gap NIS2</span><span class="badge-item">La maggior parte dei controlli di cibersicurezza</span><span class="badge-item">Gestione degli incidenti</span><span class="badge-item">Sicurezza della rete</span><span class="badge-item">Misure tecniche</span></div>
         </div>
       </div>
-
-      <!-- SOC 2 -->
       <div class="overlap-card">
-        <div class="overlap-header">
-          <div class="overlap-standard">SOC 2</div>
-          <div class="overlap-pct">55–65% overlap</div>
-        </div>
-        <div class="overlap-bar-wrap">
-          <div class="overlap-bar" style="width:60%"></div>
-        </div>
+        <div class="overlap-header"><div class="overlap-standard">SOC 2</div><div class="overlap-pct">55–65% sovrapposizione</div></div>
+        <div class="overlap-bar-wrap"><div class="overlap-bar" style="width:60%"></div></div>
         <div class="overlap-badges">
-          <div class="badge-group">
-            <span class="badge badge-covered">✓ Covered</span>
-            <span class="badge-item">Security controls</span>
-            <span class="badge-item">Access management</span>
-            <span class="badge-item">Incident response</span>
-            <span class="badge-item">Availability</span>
-            <span class="badge-item">Encryption</span>
-            <span class="badge-item">Monitoring</span>
-          </div>
-          <div class="badge-group">
-            <span class="badge badge-gap">⚠ NIS2 Gaps</span>
-            <span class="badge-item">EU regulatory requirements</span>
-            <span class="badge-item">Supply chain specifics</span>
-            <span class="badge-item">Management liability</span>
-            <span class="badge-item">Incident reporting timelines</span>
-          </div>
+          <div class="badge-group"><span class="badge badge-covered">✓ Coperto</span><span class="badge-item">Controlli di sicurezza</span><span class="badge-item">Gestione degli accessi</span><span class="badge-item">Risposta agli incidenti</span><span class="badge-item">Disponibilità</span><span class="badge-item">Crittografia</span><span class="badge-item">Monitoraggio</span></div>
+          <div class="badge-group"><span class="badge badge-gap">⚠ Gap NIS2</span><span class="badge-item">Requisiti normativi dell'UE</span><span class="badge-item">Specifiche della catena di approvvigionamento</span><span class="badge-item">Responsabilità della leadership</span><span class="badge-item">Tempi di reporte degli incidenti</span></div>
         </div>
       </div>
-
-      <!-- ISO 27701 -->
       <div class="overlap-card">
-        <div class="overlap-header">
-          <div class="overlap-standard">ISO 27701</div>
-          <div class="overlap-pct">40–50% overlap <small>(with ISO 27001)</small></div>
-        </div>
-        <div class="overlap-bar-wrap">
-          <div class="overlap-bar" style="width:45%"></div>
-        </div>
+        <div class="overlap-header"><div class="overlap-standard">ISO 27701</div><div class="overlap-pct">40–50% sovrapposizione <small>(con ISO 27001)</small></div></div>
+        <div class="overlap-bar-wrap"><div class="overlap-bar" style="width:45%"></div></div>
         <div class="overlap-badges">
-          <div class="badge-group">
-            <span class="badge badge-covered">✓ Covered</span>
-            <span class="badge-item">Privacy-related controls</span>
-            <span class="badge-item">Data processing records</span>
-            <span class="badge-item">Third-party management</span>
-          </div>
-          <div class="badge-group">
-            <span class="badge badge-gap">⚠ NIS2 Gaps</span>
-            <span class="badge-item">NIS2-specific technical measures</span>
-            <span class="badge-item">Sector requirements</span>
-            <span class="badge-item">Incident notification to authorities</span>
-          </div>
+          <div class="badge-group"><span class="badge badge-covered">✓ Coperto</span><span class="badge-item">Controlli correlati alla privacy</span><span class="badge-item">Registri di trattamento dei dati</span><span class="badge-item">Gestione di terzi</span></div>
+          <div class="badge-group"><span class="badge badge-gap">⚠ Gap NIS2</span><span class="badge-item">Misure tecniche specifiche di NIS2</span><span class="badge-item">Requisiti specifici del settore</span><span class="badge-item">Notifica degli incidenti alle autorità</span></div>
         </div>
       </div>
-
-      <!-- GDPR -->
       <div class="overlap-card">
-        <div class="overlap-header">
-          <div class="overlap-standard">GDPR</div>
-          <div class="overlap-pct">35–40% overlap</div>
-        </div>
-        <div class="overlap-bar-wrap">
-          <div class="overlap-bar" style="width:37%"></div>
-        </div>
+        <div class="overlap-header"><div class="overlap-standard">GDPR</div><div class="overlap-pct">35–40% sovrapposizione</div></div>
+        <div class="overlap-bar-wrap"><div class="overlap-bar" style="width:37%"></div></div>
         <div class="overlap-badges">
-          <div class="badge-group">
-            <span class="badge badge-covered">✓ Covered</span>
-            <span class="badge-item">Incident notification</span>
-            <span class="badge-item">Data protection measures</span>
-            <span class="badge-item">Third-party processors</span>
-            <span class="badge-item">Privacy by design</span>
-            <span class="badge-item">DPO role</span>
-          </div>
-          <div class="badge-group">
-            <span class="badge badge-gap">⚠ NIS2 Gaps</span>
-            <span class="badge-item">Network security</span>
-            <span class="badge-item">Vulnerability management</span>
-            <span class="badge-item">Business continuity specifics</span>
-            <span class="badge-item">Sector requirements</span>
-          </div>
+          <div class="badge-group"><span class="badge badge-covered">✓ Coperto</span><span class="badge-item">Notifica di incidenti</span><span class="badge-item">Misure di protezione dei dati</span><span class="badge-item">Responsabili del trattamento</span><span class="badge-item">Privacy by design</span><span class="badge-item">Ruolo del DPO</span></div>
+          <div class="badge-group"><span class="badge badge-gap">⚠ Gap NIS2</span><span class="badge-item">Sicurezza della rete</span><span class="badge-item">Gestione delle vulnerabilità</span><span class="badge-item">Specifiche di continuità aziendale</span><span class="badge-item">Requisiti specifici del settore</span></div>
         </div>
       </div>
-
-      <!-- ISO 22301 -->
       <div class="overlap-card">
-        <div class="overlap-header">
-          <div class="overlap-standard">ISO 22301</div>
-          <div class="overlap-pct">30–35% overlap</div>
-        </div>
-        <div class="overlap-bar-wrap">
-          <div class="overlap-bar" style="width:32%"></div>
-        </div>
+        <div class="overlap-header"><div class="overlap-standard">ISO 22301</div><div class="overlap-pct">30–35% sovrapposizione</div></div>
+        <div class="overlap-bar-wrap"><div class="overlap-bar" style="width:32%"></div></div>
         <div class="overlap-badges">
-          <div class="badge-group">
-            <span class="badge badge-covered">✓ Covered</span>
-            <span class="badge-item">Business continuity planning</span>
-            <span class="badge-item">Recovery objectives</span>
-            <span class="badge-item">Incident response</span>
-            <span class="badge-item">Testing and exercises</span>
-          </div>
-          <div class="badge-group">
-            <span class="badge badge-gap">⚠ NIS2 Gaps</span>
-            <span class="badge-item">Cybersecurity-specific controls</span>
-            <span class="badge-item">Incident reporting timelines</span>
-            <span class="badge-item">Access control</span>
-            <span class="badge-item">Technical security measures</span>
-          </div>
+          <div class="badge-group"><span class="badge badge-covered">✓ Coperto</span><span class="badge-item">Pianificazione della continuità</span><span class="badge-item">Obiettivi di recupero</span><span class="badge-item">Risposta agli incidenti</span><span class="badge-item">Test e esercitazioni</span></div>
+          <div class="badge-group"><span class="badge badge-gap">⚠ Gap NIS2</span><span class="badge-item">Controlli specifici della cibersicurezza</span><span class="badge-item">Tempi di reporte degli incidenti</span><span class="badge-item">Controllo degli accessi</span><span class="badge-item">Misure tecniche di sicurezza</span></div>
         </div>
       </div>
-
-    </div><!-- /.overlap-grid -->
-
-    <div class="overlap-cta">
-      <p>Find out your exact NIS2 gap — request a free assessment</p>
-      <a href="#contact" class="btn btn-primary btn-lg">Request Free Gap Assessment</a>
     </div>
+    <div class="overlap-cta"><p>Scopri i tuoi esatti gap NIS2 — richiedi una valutazione gratuita</p><a href="#contact" class="btn btn-primary btn-lg">Richiedi Valutazione Gap Gratuita</a></div>
   </div>
 </section>
-
-<!-- INTEGRATED IMPLEMENTATION -->
 <section class="section" id="integrated-implementation" style="background:#fff;">
   <div class="container">
-    <div class="section-label">Smarter Compliance</div>
-    <h2 class="section-title">Why Implement NIS2 Together with ISO Standards?</h2>
-    <p class="section-subtitle">One project. Multiple certifications. Less cost.</p>
-
+    <div class="section-label">Conformità Intelligente</div>
+    <h2 class="section-title">Perché Implementare NIS2 insieme ai Standard ISO?</h2>
+    <p class="section-subtitle">Un progetto. Più certificazioni. Meno costi.</p>
     <div class="services-grid" style="margin-top:2.5rem;">
-
-      <!-- Card 1 -->
-      <div class="service-card">
-        <div class="service-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 24 24" stroke="#1a56db" stroke-width="1.8">
-            <circle cx="12" cy="12" r="10"/>
-            <polyline points="12 6 12 12 16 14"/>
-          </svg>
-        </div>
-        <h3 class="service-title">Save Time &amp; Money</h3>
-        <p class="service-desc">When NIS2 is implemented alongside ISO 27001, ISO 27701, or ISO 9001, overlapping work is done once — not twice. Shared documentation, risk assessments, and control frameworks reduce project time by up to 40%.</p>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="service-card">
-        <div class="service-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 24 24" stroke="#1a56db" stroke-width="1.8">
-            <path d="M9 12l2 2 4-4"/>
-            <rect x="3" y="4" width="18" height="16" rx="2"/>
-            <line x1="3" y1="9" x2="21" y2="9"/>
-          </svg>
-        </div>
-        <h3 class="service-title">Single Audit Cycle</h3>
-        <p class="service-desc">Combine audit preparation, internal audits, and management reviews across multiple standards in one coordinated cycle. Our auditors cover all frameworks simultaneously, reducing disruption to your team.</p>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="service-card">
-        <div class="service-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 24 24" stroke="#1a56db" stroke-width="1.8">
-            <path d="M12 2l2.5 7.5H22l-6.5 4.5 2.5 7.5L12 17l-6 4.5 2.5-7.5L3 9.5h7.5z"/>
-          </svg>
-        </div>
-        <h3 class="service-title">Future-Ready Compliance</h3>
-        <p class="service-desc">Starting with an integrated approach means adding new standards later (ISO 42001 for AI, DORA for finance) requires minimal additional effort — your compliance foundation is already in place.</p>
-      </div>
-
-    </div><!-- /.services-grid -->
-
-    <!-- Comparison Table -->
+      <div class="service-card"><div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 24 24" stroke="#1a56db" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><h3 class="service-title">Risparmia Tempo e Denaro</h3><p class="service-desc">Quando NIS2 è implementata insieme a ISO 27001, ISO 27701 o ISO 9001, il lavoro sovrapposto viene fatto una volta — non due. Documentazione condivisa, valutazioni dei rischi e framework di controllo riducono il tempo del progetto fino al 40%.</p></div>
+      <div class="service-card"><div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 24 24" stroke="#1a56db" stroke-width="1.8"><path d="M9 12l2 2 4-4"/><rect x="3" y="4" width="18" height="16" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/></svg></div><h3 class="service-title">Ciclo di Audit Unico</h3><p class="service-desc">Combina la preparazione degli audit, gli audit interni e le revisioni della gestione su più standard in un ciclo coordinato. I nostri revisori coprono tutti i framework simultaneamente, minimizzando le interruzioni per il tuo team.</p></div>
+      <div class="service-card"><div class="service-icon"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" viewBox="0 0 24 24" stroke="#1a56db" stroke-width="1.8"><path d="M12 2l2.5 7.5H22l-6.5 4.5 2.5 7.5L12 17l-6 4.5 2.5-7.5L3 9.5h7.5z"/></svg></div><h3 class="service-title">Conformità Pronta per il Futuro</h3><p class="service-desc">Un approccio integrato dall'inizio significa che l'aggiunta di nuovi standard in futuro (ISO 42001 per l'IA, DORA per le finanze) richiede uno sforzo aggiuntivo minimo — la tua base di conformità è già in atto.</p></div>
+    </div>
     <div style="margin-top:3rem;overflow-x:auto;">
       <table style="width:100%;border-collapse:collapse;font-size:0.95rem;">
-        <thead>
-          <tr style="background:#0f1b3d;color:#fff;">
-            <th style="padding:14px 20px;text-align:left;border-radius:8px 0 0 0;"></th>
-            <th style="padding:14px 20px;text-align:center;">Separate Implementation</th>
-            <th style="padding:14px 20px;text-align:center;border-radius:0 8px 0 0;">Integrated with BALTUM</th>
-          </tr>
-        </thead>
+        <thead><tr style="background:#0f1b3d;color:#fff;"><th style="padding:14px 20px;text-align:left;border-radius:8px 0 0 0;"></th><th style="padding:14px 20px;text-align:center;">Implementazione Separata</th><th style="padding:14px 20px;text-align:center;border-radius:0 8px 0 0;">Integrato con BALTUM</th></tr></thead>
         <tbody>
-          <tr style="background:#F5F7FA;">
-            <td style="padding:13px 20px;font-weight:600;color:#1a2a4a;">Documentation effort</td>
-            <td style="padding:13px 20px;text-align:center;color:#555;">High (duplicated)</td>
-            <td style="padding:13px 20px;text-align:center;color:#1a56db;font-weight:600;">Low (shared)</td>
-          </tr>
-          <tr style="background:#fff;">
-            <td style="padding:13px 20px;font-weight:600;color:#1a2a4a;">Time to compliance</td>
-            <td style="padding:13px 20px;text-align:center;color:#555;">12–18 months</td>
-            <td style="padding:13px 20px;text-align:center;color:#1a56db;font-weight:600;">6–10 months</td>
-          </tr>
-          <tr style="background:#F5F7FA;">
-            <td style="padding:13px 20px;font-weight:600;color:#1a2a4a;">Cost</td>
-            <td style="padding:13px 20px;text-align:center;color:#555;">Higher</td>
-            <td style="padding:13px 20px;text-align:center;color:#1a56db;font-weight:600;">Up to 40% less</td>
-          </tr>
-          <tr style="background:#fff;">
-            <td style="padding:13px 20px;font-weight:600;color:#1a2a4a;">Audit coordination</td>
-            <td style="padding:13px 20px;text-align:center;color:#555;">Complex</td>
-            <td style="padding:13px 20px;text-align:center;color:#1a56db;font-weight:600;">Streamlined</td>
-          </tr>
-          <tr style="background:#F5F7FA;">
-            <td style="padding:13px 20px;font-weight:600;color:#1a2a4a;border-radius:0 0 0 8px;">Team disruption</td>
-            <td style="padding:13px 20px;text-align:center;color:#555;">High</td>
-            <td style="padding:13px 20px;text-align:center;color:#1a56db;font-weight:600;border-radius:0 0 8px 0;">Minimal</td>
-          </tr>
+          <tr style="background:#F5F7FA;"><td style="padding:13px 20px;font-weight:600;color:#1a2a4a;">Sforzo di documentazione</td><td style="padding:13px 20px;text-align:center;color:#555;">Alto (duplicato)</td><td style="padding:13px 20px;text-align:center;color:#1a56db;font-weight:600;">Basso (condiviso)</td></tr>
+          <tr style="background:#fff;"><td style="padding:13px 20px;font-weight:600;color:#1a2a4a;">Tempo fino alla conformità</td><td style="padding:13px 20px;text-align:center;color:#555;">12–18 mesi</td><td style="padding:13px 20px;text-align:center;color:#1a56db;font-weight:600;">6–10 mesi</td></tr>
+          <tr style="background:#F5F7FA;"><td style="padding:13px 20px;font-weight:600;color:#1a2a4a;">Costo</td><td style="padding:13px 20px;text-align:center;color:#555;">Più alto</td><td style="padding:13px 20px;text-align:center;color:#1a56db;font-weight:600;">Fino al 40% meno</td></tr>
+          <tr style="background:#fff;"><td style="padding:13px 20px;font-weight:600;color:#1a2a4a;">Coordinamento degli audit</td><td style="padding:13px 20px;text-align:center;color:#555;">Complesso</td><td style="padding:13px 20px;text-align:center;color:#1a56db;font-weight:600;">Semplificato</td></tr>
+          <tr style="background:#F5F7FA;"><td style="padding:13px 20px;font-weight:600;color:#1a2a4a;border-radius:0 0 0 8px;">Interruzione del team</td><td style="padding:13px 20px;text-align:center;color:#555;">Alta</td><td style="padding:13px 20px;text-align:center;color:#1a56db;font-weight:600;border-radius:0 0 8px 0;">Minima</td></tr>
         </tbody>
       </table>
     </div>
-
-    <!-- CTA -->
-    <div style="text-align:center;margin-top:2.5rem;">
-      <a href="#contact" class="btn btn-primary btn-lg">Request an integrated NIS2 + ISO implementation proposal →</a>
-    </div>
-
+    <div style="text-align:center;margin-top:2.5rem;"><a href="#contact" class="btn btn-primary btn-lg">Richiedi proposta integrata NIS2 + ISO →</a></div>
   </div>
 </section>
-
-<!-- BLOG -->
 <section class="section" id="blog">
   <div class="container">
-    <div class="section-label">Insights & Guides</div>
-    <h2 class="section-title">Latest from Our Blog</h2>
-    <p class="section-subtitle">Expert articles on NIS2 implementation, compliance strategies, and EU cybersecurity regulations — written by certified auditors at BALTUM Bureau.</p>
-
+    <div class="section-label">Articoli e Guide</div>
+    <h2 class="section-title">Ultimi dal Nostro Blog</h2>
+    <p class="section-subtitle">Articoli esperti su implementazione NIS2, strategie di conformità e normative sulla cibersicurezza dell'UE — scritti da revisori certificati di BALTUM Bureau.</p>
     <div class="cards-3col" style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));">
-
       <div class="service-card" style="display:flex;flex-direction:column;">
         <div style="height:4px;background:linear-gradient(90deg,#1D6FE8,#3b8af7);border-radius:4px 4px 0 0;margin:-1.75rem -1.75rem 1.5rem;"></div>
-        <div style="display:flex;align-items:center;gap:0.6rem;font-size:0.82rem;color:#888;margin-bottom:0.75rem;">
-          <span style="background:#e8f0fe;color:#1D6FE8;padding:2px 10px;border-radius:20px;font-weight:600;font-size:0.78rem;">Incident Management</span>
-          <span>May 2026</span>
-        </div>
-        <h3 class="service-title" style="font-size:1.1rem;line-height:1.4;margin-bottom:0.75rem;">NIS2 Incident Reporting: The 24-Hour and 72-Hour Rules Explained</h3>
-        <p style="font-size:0.93rem;color:#555;line-height:1.65;flex:1;margin-bottom:1.25rem;">NIS2 introduces strict incident notification timelines. Learn what counts as a significant incident, the three-stage reporting process, and how to prepare your organization.</p>
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-top:auto;">
-          <span style="font-size:0.82rem;color:#888;">By BALTUM Bureau</span>
-          <a href="/blog/nis2-incident-reporting.html" class="btn btn-primary btn-sm">Read more →</a>
-        </div>
+        <div style="display:flex;align-items:center;gap:0.6rem;font-size:0.82rem;color:#888;margin-bottom:0.75rem;"><span style="background:#e8f0fe;color:#1D6FE8;padding:2px 10px;border-radius:20px;font-weight:600;font-size:0.78rem;">Gestione degli Incidenti</span><span>Maggio 2026</span></div>
+        <h3 class="service-title" style="font-size:1.1rem;line-height:1.4;margin-bottom:0.75rem;">Reporte degli Incidenti NIS2: Le Regole delle 24 e 72 Ore Spiegate</h3>
+        <p style="font-size:0.93rem;color:#555;line-height:1.65;flex:1;margin-bottom:1.25rem;">NIS2 introduce tempi rigidi di notifica degli incidenti. Scopri cosa costituisce un incidente significativo, il processo di reporte in tre fasi e come preparare la tua organizzazione.</p>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-top:auto;"><span style="font-size:0.82rem;color:#888;">By BALTUM Bureau</span><a href="/blog/nis2-incident-reporting.html" class="btn btn-primary btn-sm">Leggi di più →</a></div>
       </div>
-
       <div class="service-card" style="display:flex;flex-direction:column;">
         <div style="height:4px;background:linear-gradient(90deg,#1D6FE8,#3b8af7);border-radius:4px 4px 0 0;margin:-1.75rem -1.75rem 1.5rem;"></div>
-        <div style="display:flex;align-items:center;gap:0.6rem;font-size:0.82rem;color:#888;margin-bottom:0.75rem;">
-          <span style="background:#e8f0fe;color:#1D6FE8;padding:2px 10px;border-radius:20px;font-weight:600;font-size:0.78rem;">Supply Chain</span>
-          <span>May 2026</span>
-        </div>
-        <h3 class="service-title" style="font-size:1.1rem;line-height:1.4;margin-bottom:0.75rem;">NIS2 Supply Chain Security: What You Need to Know About Vendor Risk</h3>
-        <p style="font-size:0.93rem;color:#555;line-height:1.65;flex:1;margin-bottom:1.25rem;">NIS2 Article 21(2)(d) makes vendor security a legal obligation. Learn how to assess supplier risk, build a vendor program, and protect your supply chain under NIS2.</p>
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-top:auto;">
-          <span style="font-size:0.82rem;color:#888;">By BALTUM Bureau</span>
-          <a href="/blog/nis2-supply-chain-security.html" class="btn btn-primary btn-sm">Read more →</a>
-        </div>
+        <div style="display:flex;align-items:center;gap:0.6rem;font-size:0.82rem;color:#888;margin-bottom:0.75rem;"><span style="background:#e8f0fe;color:#1D6FE8;padding:2px 10px;border-radius:20px;font-weight:600;font-size:0.78rem;">Catena di Approvvigionamento</span><span>Maggio 2026</span></div>
+        <h3 class="service-title" style="font-size:1.1rem;line-height:1.4;margin-bottom:0.75rem;">Sicurezza della Catena di Approvvigionamento NIS2: Cosa Devi Sapere sul Rischio dei Fornitori</h3>
+        <p style="font-size:0.93rem;color:#555;line-height:1.65;flex:1;margin-bottom:1.25rem;">L'Articolo 21(2)(d) della NIS2 rende la sicurezza dei fornitori un obbligo legale. Scopri come valutare il rischio dei fornitori, costruire un programma e proteggere la tua catena di approvvigionamento secondo NIS2.</p>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-top:auto;"><span style="font-size:0.82rem;color:#888;">By BALTUM Bureau</span><a href="/blog/nis2-supply-chain-security.html" class="btn btn-primary btn-sm">Leggi di più →</a></div>
       </div>
-
       <div class="service-card" style="display:flex;flex-direction:column;">
         <div style="height:4px;background:linear-gradient(90deg,#1D6FE8,#3b8af7);border-radius:4px 4px 0 0;margin:-1.75rem -1.75rem 1.5rem;"></div>
-        <div style="display:flex;align-items:center;gap:0.6rem;font-size:0.82rem;color:#888;margin-bottom:0.75rem;">
-          <span style="background:#e8f0fe;color:#1D6FE8;padding:2px 10px;border-radius:20px;font-weight:600;font-size:0.78rem;">Scope &amp; Categories</span>
-          <span>May 2026</span>
-        </div>
-        <h3 class="service-title" style="font-size:1.1rem;line-height:1.4;margin-bottom:0.75rem;">Essential vs Important Entities Under NIS2: Which Category Are You?</h3>
-        <p style="font-size:0.93rem;color:#555;line-height:1.65;flex:1;margin-bottom:1.25rem;">NIS2 divides organizations into Essential and Important Entities with different oversight levels and fines. Find out which category applies and what it means for your compliance program.</p>
-        <div style="display:flex;align-items:center;justify-content:space-between;margin-top:auto;">
-          <span style="font-size:0.82rem;color:#888;">By BALTUM Bureau</span>
-          <a href="/blog/nis2-essential-vs-important.html" class="btn btn-primary btn-sm">Read more →</a>
-        </div>
+        <div style="display:flex;align-items:center;gap:0.6rem;font-size:0.82rem;color:#888;margin-bottom:0.75rem;"><span style="background:#e8f0fe;color:#1D6FE8;padding:2px 10px;border-radius:20px;font-weight:600;font-size:0.78rem;">Portata e Categorie</span><span>Maggio 2026</span></div>
+        <h3 class="service-title" style="font-size:1.1rem;line-height:1.4;margin-bottom:0.75rem;">Entità Essenziali vs. Importanti in NIS2: Quale Categoria Sei?</h3>
+        <p style="font-size:0.93rem;color:#555;line-height:1.65;flex:1;margin-bottom:1.25rem;">NIS2 divide le organizzazioni in Entità Essenziali e Importanti con diversi livelli di supervisione e sanzioni. Scopri quale categoria si applica e cosa significa per il tuo programma di conformità.</p>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-top:auto;"><span style="font-size:0.82rem;color:#888;">By BALTUM Bureau</span><a href="/blog/nis2-essential-vs-important.html" class="btn btn-primary btn-sm">Leggi di più →</a></div>
       </div>
-
     </div>
-
-    <div style="text-align:center;margin-top:2.5rem;">
-      <a href="/blog/" class="btn btn-outline btn-lg">View All Articles →</a>
-    </div>
+    <div style="text-align:center;margin-top:2.5rem;"><a href="/blog/" class="btn btn-outline btn-lg">Visualizza Tutti gli Articoli →</a></div>
   </div>
 </section>
-
-<!-- CONTACT -->
 <section class="section section-contact" id="contact">
   <div class="container">
     <div class="contact-grid">
       <div class="contact-info">
-        <div class="section-label">Free Consultation</div>
-        <h2 class="section-title">Get Your Free<br />NIS2 Assessment</h2>
-        <p>Not sure if NIS2 applies to your organization? Send us a message — we'll review your situation and give you a straight answer, free of charge.</p>
+        <div class="section-label">Consulenza Gratuita</div>
+        <h2 class="section-title">Ottieni la Tua<br />Valutazione NIS2 Gratuita</h2>
+        <p>Non sei sicuro se la NIS2 si applica alla tua organizzazione? Inviaci un messaggio — esamineremo la tua situazione e ti daremo una risposta chiara, gratuitamente.</p>
         <div class="contact-details">
-          <div class="contact-detail-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#1D6FE8" stroke-width="2"/><path d="M22 6L12 13L2 6" stroke="#1D6FE8" stroke-width="2"/></svg>
-            <a href="mailto:info@baltum.org">info@baltum.org</a>
-          </div>
-          <div class="contact-detail-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#1D6FE8" stroke-width="2"/><path d="M2 12H22M12 2C9.33 4.67 8 7.33 8 12C8 16.67 9.33 19.33 12 22M12 2C14.67 4.67 16 7.33 16 12C16 16.67 14.67 19.33 12 22" stroke="#1D6FE8" stroke-width="2"/></svg>
-            <a href="https://baltum.org" target="_blank" rel="noopener">baltum.org</a>
-          </div>
+          <div class="contact-detail-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="#1D6FE8" stroke-width="2"/><path d="M22 6L12 13L2 6" stroke="#1D6FE8" stroke-width="2"/></svg><a href="mailto:info@baltum.org">info@baltum.org</a></div>
+          <div class="contact-detail-item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#1D6FE8" stroke-width="2"/><path d="M2 12H22M12 2C9.33 4.67 8 7.33 8 12C8 16.67 9.33 19.33 12 22M12 2C14.67 4.67 16 7.33 16 12C16 16.67 14.67 19.33 12 22" stroke="#1D6FE8" stroke-width="2"/></svg><a href="https://baltum.org" target="_blank" rel="noopener">baltum.org</a></div>
         </div>
       </div>
-
       <div class="contact-form-wrap">
-        <p style="margin-bottom:1rem;color:#444;">For a quick automated assessment, try our <a href="https://baltum.ai" target="_blank" style="color:#1D6FE8;">AI NIS2 tool at baltum.ai</a></p>
+        <p style="margin-bottom:1rem;color:#444;">Per una valutazione automatica veloce, prova il nostro <a href="https://baltum.ai" target="_blank" style="color:#1D6FE8;">strumento NIS2 con IA su baltum.ai</a></p>
         <form class="contact-form" action="https://formsubmit.co/info@baltum.org" method="POST">
-          <input type="hidden" name="_subject" value="NIS2 Assessment Request — nis2compliance.io">
-          <input type="hidden" name="_next" value="https://nis2compliance.io/?sent=1">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_template" value="table">
-          <div class="form-group">
-            <label for="name">Full Name *</label>
-            <input type="text" id="name" name="name" placeholder="John Smith" required />
-          </div>
-          <div class="form-group">
-            <label for="company">Company *</label>
-            <input type="text" id="company" name="company" placeholder="Your Organization" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address *</label>
-            <input type="email" id="email" name="email" placeholder="john@company.com" required />
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="body" rows="4" placeholder="Tell us about your organization and NIS2 concerns..."></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-full btn-lg">Send Message</button>
-          <p class="form-note">We respond within 1 business day. No spam, ever.</p>
+          <input type="hidden" name="_subject" value="NIS2 Assessment Request — nis2compliance.io"><input type="hidden" name="_next" value="https://nis2compliance.io/?sent=1"><input type="hidden" name="_captcha" value="false"><input type="hidden" name="_template" value="table">
+          <div class="form-group"><label for="name">Nome Completo *</label><input type="text" id="name" name="name" placeholder="Marco Rossi" required /></div>
+          <div class="form-group"><label for="company">Azienda *</label><input type="text" id="company" name="company" placeholder="La Tua Organizzazione" required /></div>
+          <div class="form-group"><label for="email">Indirizzo Email *</label><input type="email" id="email" name="email" placeholder="marco@azienda.it" required /></div>
+          <div class="form-group"><label for="message">Messaggio</label><textarea id="message" name="body" rows="4" placeholder="Raccontaci della tua organizzazione e delle tue preoccupazioni sulla NIS2..."></textarea></div>
+          <button type="submit" class="btn btn-primary btn-full btn-lg">Invia Messaggio</button>
+          <p class="form-note">Rispondiamo entro 1 giorno lavorativo. Niente spam, garantito.</p>
         </form>
       </div>
     </div>
   </div>
 </section>
-
-<!-- FOOTER -->
 <footer class="footer">
   <div class="container footer-inner">
     <div class="footer-brand">
-      <a href="#top" class="logo">
-        <svg class="logo-icon" viewBox="0 0 40 40" fill="none"><path d="M20 3L5 10V20C5 28.8 11.6 37.1 20 39C28.4 37.1 35 28.8 35 20V10L20 3Z" fill="#1D6FE8" opacity="0.2" stroke="#1D6FE8" stroke-width="2"/><path d="M14 20L18 24L27 15" stroke="#1D6FE8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <div class="logo-text">
-          <span class="logo-name">NIS2 Compliance</span>
-          <span class="logo-tagline">by BALTUM Bureau</span>
-        </div>
+      <a href="#top" class="logo"><svg class="logo-icon" viewBox="0 0 40 40" fill="none"><path d="M20 3L5 10V20C5 28.8 11.6 37.1 20 39C28.4 37.1 35 28.8 35 20V10L20 3Z" fill="#1D6FE8" opacity="0.2" stroke="#1D6FE8" stroke-width="2"/><path d="M14 20L18 24L27 15" stroke="#1D6FE8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="logo-text"><span class="logo-name">NIS2 Compliance</span><span class="logo-tagline">by BALTUM Bureau</span></div>
       </a>
-      <p class="footer-desc">Professional NIS2 compliance consulting for EU organizations. Audits, consulting, and training by certified experts.</p>
+      <p class="footer-desc">Consulenza professionale sulla conformità NIS2 per organizzazioni dell'UE. Audit, consulenza e formazione da esperti certificati.</p>
     </div>
     <div class="footer-links">
-      <div class="footer-col">
-        <div class="footer-col-title">Services</div>
-        <a href="#services">NIS2 Audit</a>
-        <a href="#services">NIS2 Consulting</a>
-        <a href="#services">NIS2 Training</a>
-      </div>
-      <div class="footer-col">
-        <div class="footer-col-title">Resources</div>
-        <a href="#about">About NIS2</a>
-        <a href="#requirements">NIS2 Requirements</a>
-        <a href="#who-needs">Who Needs It</a>
-      </div>
-      <div class="footer-col">
-        <div class="footer-col-title">BALTUM Group</div>
-        <a href="https://baltum.org" target="_blank" rel="noopener">baltum.org</a>
-        <a href="#contact">Contact Us</a>
-      </div>
+      <div class="footer-col"><div class="footer-col-title">Servizi</div><a href="#services">Audit NIS2</a><a href="#services">Consulenza NIS2</a><a href="#services">Formazione NIS2</a></div>
+      <div class="footer-col"><div class="footer-col-title">Risorse</div><a href="#about">Informazioni su NIS2</a><a href="#requirements">Requisiti NIS2</a><a href="#who-needs">Chi ne ha bisogno</a></div>
+      <div class="footer-col"><div class="footer-col-title">Gruppo BALTUM</div><a href="https://baltum.org" target="_blank" rel="noopener">baltum.org</a><a href="#contact">Contatti</a></div>
     </div>
   </div>
   <div class="footer-bottom">
-    <div class="container footer-bottom-inner">
-      <span>© 2026 BALTUM Bureau | nis2compliance.io</span>
-      <span class="footer-updated">Last updated: May 2026</span>
-      <div class="footer-bottom-links">
-        <a href="https://baltum.org" target="_blank" rel="noopener">baltum.org</a>
-        <a href="#privacy">Privacy Policy</a>
-      </div>
+    <div class="container footer-bottom-inner"><span>© 2026 BALTUM Bureau | nis2compliance.io</span><span class="footer-updated">Ultimo aggiornamento: Maggio 2026</span>
+      <div class="footer-bottom-links"><a href="https://baltum.org" target="_blank" rel="noopener">baltum.org</a><a href="#privacy">Politica sulla Privacy</a></div>
     </div>
   </div>
 </footer>
-
 <script>
-  // Mobile menu toggle
   const toggle = document.getElementById('mobileToggle');
   const navMenu = document.getElementById('navMenu');
-  toggle.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-    toggle.classList.toggle('active');
-  });
-
-  // Close nav on link click
-  document.querySelectorAll('.nav-link, .nav .btn').forEach(link => {
-    link.addEventListener('click', () => {
-      navMenu.classList.remove('active');
-      toggle.classList.remove('active');
-    });
-  });
-
-  // Sticky header shadow on scroll
-  window.addEventListener('scroll', () => {
-    const header = document.querySelector('.header');
-    if (window.scrollY > 20) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
-    }
-  });
-
-  // Smooth scroll
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      const target = document.querySelector(this.getAttribute('href'));
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    });
-  });
-
-  // Intersection observer for fade-in animations
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-      }
-    });
-  }, { threshold: 0.08 });
-
-  document.querySelectorAll('.service-card, .req-item, .sector-item, .why-item, .why-card, .card').forEach(el => {
-    observer.observe(el);
-  });
+  toggle.addEventListener('click', () => { navMenu.classList.toggle('active'); toggle.classList.toggle('active'); });
+  document.querySelectorAll('.nav-link, .nav .btn').forEach(link => { link.addEventListener('click', () => { navMenu.classList.remove('active'); toggle.classList.remove('active'); }); });
+  window.addEventListener('scroll', () => { const header = document.querySelector('.header'); if (window.scrollY > 20) { header.classList.add('scrolled'); } else { header.classList.remove('scrolled'); } });
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => { anchor.addEventListener('click', function(e) { const target = document.querySelector(this.getAttribute('href')); if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); } }); });
+  const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); } }); }, { threshold: 0.08 });
+  document.querySelectorAll('.service-card, .req-item, .sector-item, .why-item, .why-card, .card').forEach(el => { observer.observe(el); });
 </script>
-
 </body>
 </html>

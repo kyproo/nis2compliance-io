@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /deploy.php
+Sitemap: https://nis2compliance.io/sitemap.xml
